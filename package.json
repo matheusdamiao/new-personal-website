@@ -6,11 +6,16 @@
     "start": "next start"
   },
   "dependencies": {
+    "i18next": "^22.4.14",
     "next": "latest",
+    "next-i18next": "^13.2.2",
+    "next-themes": "^0.2.1",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "react-i18next": "^12.2.0"
   },
   "devDependencies": {
+    "@types/next": "^9.0.0",
     "@types/node": "18.11.3",
     "@types/react": "18.0.21",
     "@types/react-dom": "18.0.6",
