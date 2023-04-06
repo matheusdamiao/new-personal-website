@@ -31,7 +31,7 @@ const Home: NextPage = () => {
   return (
     <>
       <Menu locales={locales} />
-      <div className="w-full h-screen flex-col flex items-center justify-center bg-white dark:bg-lightBlack ">
+      <div className="pl-10 lg:pl-0 w-full h-screen flex-col flex items-center justify-center bg-white dark:bg-lightBlack ">
         <div className="flex flex-col items-start">
           <h4 className="text-lg text-lightOrange dark:text-lightOrange ">
             {translate("header.title")}
@@ -40,7 +40,7 @@ const Home: NextPage = () => {
             Matheus Damião
           </h1>
 
-          <h2 className="text-darkGray dark:text-lightGray text-2xl max-w-[900px]">
+          <h2 className="text-darkGray dark:text-lightGray text-2xl max-w-[900px] pr-14 sm:pr-0">
             {translate("header.body")}
           </h2>
           <button className="text-lg shadow-xl hover:shadow-none transition-shadow text-lightOrange rounded-2xl bg-[#D9D2CF] dark:bg-transparent dark:border-solid dark:border-2 py-[23px] px-[35px] mt-10 border-orange-400  ">
