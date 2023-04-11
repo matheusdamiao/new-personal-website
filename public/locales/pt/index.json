@@ -1,5 +1,20 @@
 {"header": {
-    "title": "Oi, meu nome é",
-    "body": "Eu construo sites, blogs e aplicações web com tecnologia de ponta e design único", 
+    "title": "Olá, meu nome é Matheus Damião. ",
+    "subtitle": " Sou desenvolvedor web e designer.",
+    "body": "Construo aplicações web com design & tecnologias modernas", 
     "button": "vamos trabalhar juntos"
-}}
+},
+"about": {
+    "title": "Sobre mim",
+"body": "Olá! Meu nome é Matheus Oliveira Damião, tenho 30 anos, sou desenvolvedor web full-stack e web designer, pai de pet e carioca por convivência. Atualmente trabalho como desenvolvedor web freelancer, construindo web sites e blogs para advogados e outros profissionais que queiram divulgar seus serviços e conteúdo na web. Em 2021 dei meus primeiros passos como desenvolvedor e de lá pra cá, estou em constante aprendizado e crescimento... ",
+"moreBody": "Na adolescência eu lembro de me divertir muito no laboratório de informática da escola construindo páginas com HTML e CSS, tudo no bloco de notas, mas meu forte na escola eram mesmo as ‘humanidades’ e, por isso, fui fazer Letras (UFRJ). Virei professor de idiomas, mestrei em filosofia e fui até o doutorado. Mas depois de quase 10 anos maravilhosos de sala de aula, comecei a me sentir limitado profissionalmente --veio a pandemia--, e eu decidi que iria embarcar em uma nova profissão. Foi quando eu acabei esbarrando por aquelas tags HTML de novo e me apaixonei por desenvolvimento web. Construir as interações entre usuários, aproximando pessoas e fazendo a experiência da web ser agradável, prática e até divertida, é o que me fez querer embarcar de vez neste mundo vasto da programação. ",
+"techs": {
+    "title": "Algumas tecnologias com as quais trabalhei",
+    "topic1": "React, GatsbyJS, NextJS",
+    "topic2": "Figma e Adobe Photoshop",
+    "topic3": "Back-end: Node(Express), .NET Core 6",
+    "topic4": "Headless CMS: NetlifyCMS, Hygraph, WordPress, Strapi",
+    "topic5": "Database: MongoDB, Firebase, SQLite"
+    }
+}
+}
