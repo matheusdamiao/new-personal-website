@@ -15,7 +15,11 @@ const ToggleLanguage = ({ locales }: Language): JSX.Element => {
     <div className="">
       {locales?.map((lang) => {
         return (
-          <button className="p-2 uppercase" onClick={() => changeLocale(lang)}>
+          <button
+            key={lang}
+            className="p-2 uppercase"
+            onClick={() => changeLocale(lang)}
+          >
             {lang}
           </button>
         );
