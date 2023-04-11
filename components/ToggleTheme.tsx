@@ -9,7 +9,7 @@ const ToggleTheme = () => {
       className="p-2"
       onClick={() => (theme == "dark" ? setTheme("light") : setTheme("dark"))}
     >
-      Change theme to {theme === "dark" ? "light" : "dark"}
+      {theme === "dark" ? "light" : "dark"}
     </button>
   );
 };
