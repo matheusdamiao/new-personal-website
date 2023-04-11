@@ -27,18 +27,18 @@ const Home: NextPage = () => {
   return (
     <>
       <Menu locales={locales} />
-      <div className="pl-10 pr-3 w-full h-screen flex-col flex items-start px-9 md:px-44 justify-center bg-white dark:bg-lightBlack">
+      <div className="pl-10 pr-3 pt-12 w-full h-screen flex-col flex items-start px-9 lg:px-44 justify-center bg-white dark:bg-lightBlack">
         <div className="flex flex-col items-start">
           <div className="flex flex-wrap gap-2">
-            <p className="text-lg text-lightOrange dark:text-lightOrange ">
+            <p className="text-base md:text-xl text-lightOrange dark:text-lightOrange ">
               {translate("header.title")}
             </p>
-            <p className="text-lg text-darkBlack dark:text-white ">
+            <p className="text-base md:text-xl text-darkBlack dark:text-white ">
               {translate("header.subtitle")}
             </p>
           </div>
 
-          <h2 className="text-5xl sm:text-6xl leading-[4rem] md:leading-[5rem] font-regular text-darkBlack dark:text-white py-3 max-w-[900px] pr-4 sm:pr-0 ">
+          <h2 className="text-5xl sm:text-6xl leading-[4rem] md:leading-[5rem] font-regular text-darkBlack dark:text-white py-3 max-w-[1200px] pr-2 sm:pr-0 ">
             {translate("header.body")}
           </h2>
           <button className="text-lg shadow-xl hover:shadow-none transition-shadow text-lightOrange rounded-2xl bg-[#D9D2CF] dark:bg-transparent dark:border-solid dark:border-2 py-[23px] px-[35px] mt-10 border-orange-400  ">
