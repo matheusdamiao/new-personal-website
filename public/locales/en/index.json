@@ -16,4 +16,23 @@
     "topic4": "Headless CMS: NetlifyCMS, Hygraph, WordPress, Strapi",
     "topic5": "Database: MongoDB, Firebase, SQLite"
     }
+},
+"services": {
+    "title": "What I do",
+    "topic1": {
+        "title": "Website and web applications development",
+        "text": "Secure and fast websites made with the newest web development technologies, like GatsbyJS and NextJS"
+    },
+    "topic2": {
+        "title": "Blog, Agenda, News",
+        "text": "Upload texts, images and publish content from your own website by connecting to a Headless CMS, such as Decap CMS or Wordpress"
+    },
+    "topic3": {
+        "title": "User-friendly and responsive design",
+        "text": "From IPads to cellphones, your website 100% responsive in all devices and designed to provide the best user experience (UX)"
+    },
+    "topic4": {
+        "title": "External services",
+        "text": "Connect your application to other APIs and get access to more resources"
+    }
 }}
