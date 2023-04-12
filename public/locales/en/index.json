@@ -5,7 +5,7 @@
     "button": "let's work together"
 },
 "about": {
-    "title": "About me",
+    "title": "Nice to meet you, Matheus",
 "body": "Hi, My name is Matheus Oliveira Damião, I'm 30 years old. I'm a full-stack web developer and designer, and also full time dogs' owner. I live in Rio de Janeiro since 2011. Currently I work as a freelancer web developer, building websites and blogs for lawyers and other professionals who want to promote their services and content on the web. In 2021, I took my first steps as a developer and since then I'm constantly learning and growing ...",
 "moreBody": "In my childhood, I remember having fun at the school info lab, making web pages with HTML, CSS and with my friends, everything from a notepad, but at school I was way better in the 'humanities', and that's why I eventually went to study Langauges at college (UFRJ). I ended up becoming a language teacher, got a master degree in philosophy and headed to a PhD. But after almost 10 wonderful years in the classroom, I started feeling professionally bounded, -- the pandemic started --, and I decided I'd go after a new profession. That's when I kind of accidentlly bumped into those HTML tags again and fell in love about web development. To build users' interactions, connecting people and making web experience to be pleasant, useful and even fun is what made me want to embark for good on this vast world of programming. ",
 "techs": {
@@ -37,7 +37,7 @@
     }
 },
 "projects":{
-    "title": "Some projects I've built",
+    "title": "Selected projects",
     "project1": {
         "title":"Cupullile e Medeiros Lawyers",
         "subtitle":"Institutional website + blog",
