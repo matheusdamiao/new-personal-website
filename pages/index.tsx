@@ -6,6 +6,7 @@ import { useEffect, useState } from "react";
 import Menu from "../components/Menu";
 import About from "../components/About";
 import Services from "../components/Services";
+import Projects from "../components/Projects";
 
 const Home: NextPage = () => {
   const { locale, locales, push } = useRouter();
@@ -47,8 +48,9 @@ const Home: NextPage = () => {
           </button>
         </div>
       </div>
-      <About />
       <Services />
+      <Projects />
+      <About />
     </>
   );
 };
