@@ -8,7 +8,7 @@ const About = () => {
   const { t: translate } = useTranslation("index");
 
   return (
-    <div className="flex flex-col w-full md:h-full lg:h-screen items-center md:px-44 px-9 py-40 dark:bg-darkBlack bg-white ">
+    <div className="flex flex-col w-full md:h-full lg:h-full items-center md:px-44 px-9 py-40 dark:bg-darkBlack bg-white ">
       <div className="flex justify-start items-center gap-3 w-full">
         <span className="font-Source text-sm md:text-xl text-lightOrange">
           [1]
@@ -19,7 +19,7 @@ const About = () => {
       </div>
       <div className="flex pt-[40px] w-full gap-8 justify-center lg:justify-start lg:gap-22 xl:gap-52 flex-wrap-reverse lg:flex-nowrap">
         <div className="flex justify-center">
-          <p className="font-Source max-w-[900px] text-sm md:text-lg md:leading-[198%]">
+          <p className="font-Source max-w-[900px] text-sm md:text-lg leading-[32px] md:leading-[32px] text-lightBlack dark:text-white">
             {translate("about.body")}
             {readMore && <span>{translate("about.moreBody")}</span>}
             <button onClick={() => setReadMore(!readMore)}>
@@ -38,7 +38,7 @@ const About = () => {
             {translate("about.techs.title")}
           </h3>
         </div>
-        <div className="flex gap-0 md:gap-0 lg:gap-0 xl:gap-20 font-Source flex-wrap pl-5">
+        <div className="flex gap-0 md:gap-0 lg:gap-0 xl:gap-20 font-Source flex-wrap pl-5 pb-10">
           <ul>
             <li className="list-disc">{translate("about.techs.topic1")}</li>
             <li className="list-disc">{translate("about.techs.topic2")}</li>
