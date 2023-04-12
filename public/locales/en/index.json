@@ -35,4 +35,37 @@
         "title": "External services",
         "text": "Connect your application to other APIs and get access to more resources"
     }
+},
+"projects":{
+    "title": "Some projects I've built",
+    "project1": {
+        "title":"Cupullile e Medeiros Lawyers",
+        "subtitle":"Institutional website + blog",
+        "text":"After a rebranding, I built this institutional website with a new logo, which, alongside the new monochromatic pallete color, brings seriousness and lightness to design. The logo uses letter M to represent the image of deal between people, which is an essential value present in the legal practice of these two lawyers",
+        "techs":"Techs: GatsbyJS, NetlifyCMS, Sass, Netlify"
+    },
+    "project2": {
+        "title":"Commercial Dashboard",
+        "subtitle":"Challenge",
+        "text":"Browse through products, register new items in the database (MirageJS), and bookmark and serach saved items. This dashboard was developed to attend to an online commercial platform organizing its products to clients",
+        "techs":"Techs: NextJS, Styled-Components, SWR, React-hot-toast, MirageJS"
+    },
+    "project3": {
+        "title":"Pedro Menezes | Law Office",
+        "subtitle":"Institutional website + blog (concept)",
+        "text":"Pedro Menezes is a complete institutional website, with blog and an automatized form contact, which I developed in order to meet real demands from a law office",
+        "techs":"Techs: Gatsby, NetlifyCMS, Styled-Components"
+    },
+    "project4": {
+        "title":"Patrícia | Graphic Designer",
+        "subtitle":"Portifolio (concept)",
+        "text":"The aim of this project was to create a clean portfolio, so a graphic designer could show her best works on the web",
+        "techs":"Techs: React, Styled-Components"
+    },
+    "project5": {
+        "title":"Pedro Menezes | Photography",
+        "subtitle":"Portfolio (concept)",
+        "text":"The aim of this project was to develop a complete website for a photographer. After a benchmarking research, I decided to categorize photo essays, add clients' testimonials and add fixed contact buttons.",
+        "techs":"Techs: HTML, CSS, JavaScript, Figma"
+    }
 }}

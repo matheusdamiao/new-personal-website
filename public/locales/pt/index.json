@@ -35,4 +35,36 @@
         "title": "External services",
         "text": "Conecte sua aplicação a outras APIs e tenha acesso a mais recursos"
     }
+},"projects":{
+    "title": "Alguns projetos que construi",
+    "project1": {
+        "title":"Cupullile e Medeiros Advogadas",
+        "subtitle":"Site institucional + blog",
+        "text":"Depois de um rebranding, construi o site institucional com a nova logotipo que, junto da paleta de cor monocromática, traz seriedade e leveza ao design. A logo utiliza da letra M para enfatizar o acordo entre as pessoas, valor essencial na prática jurídica das duas advogadas.",
+        "techs":"Techs: GatsbyJS, NetlifyCMS, Sass, Netlify"
+    },
+    "project2": {
+        "title":"Dashboard de Comércio",
+        "subtitle":"Desafio",
+        "text":"Navegue entre os produtos, cadastre novos itens no banco de dados (MirageJS), e favorite e pesquise itens salvos. Este dashboard foi desenvolvido para atender uma plataforma de comércio online organizando os produtos para seus clientes.",
+        "techs":"Techs: NextJS, Styled-Components, SWR, React-hot-toast, MirageJS"
+    },
+    "project3": {
+        "title":"Pedro Menezes Advocacia",
+        "subtitle":"Site institucional + blog (conceito)",
+        "text":"Pedro Menezes é um site institucional completo, com blog e formulário de contato automatizado, que desenvolvi com o objetivo de atender às demandas reais de um site para escritório de advocacia.",
+        "techs":"Techs: Gatsby, NetlifyCMS, Styled-Components"
+    },
+    "project4": {
+        "title":"Patrícia | Designer Gráfico",
+        "subtitle":"Portfólio (conceito)",
+        "text":"O objetivo do projeto foi criar um portfólio clean para que um designer gráfico pudesse expor seus melhores trabalhos na web. ",
+        "techs":"Techs: React, Styled-Components"
+    },
+    "project5": {
+        "title":"Pedro Menezes | Fotografia",
+        "subtitle":"Portfólio (conceito)",
+        "text":"O objetivo do projeto foi desenvolver um website completo para um fotógrafo. Após uma pesquisa de benchmarking, decidi por categorizar os ensaios, inserir relatos dos clientes e adicionar botões fixos de contato. ",
+        "techs":"Techs: HTML, CSS, JavaScript, Figma"
+    }
 }}
