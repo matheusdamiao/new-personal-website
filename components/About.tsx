@@ -10,10 +10,10 @@ const About = () => {
   return (
     <div className="flex flex-col w-full md:h-full lg:h-full items-center md:px-44 px-9 py-40 dark:bg-darkBlack bg-white ">
       <div className="flex justify-start items-center gap-3 w-full">
-        <span className="font-Source text-sm md:text-xl text-lightOrange">
+        {/* <span className="font-Source text-sm md:text-xl text-lightOrange">
           [1]
-        </span>
-        <h2 className="font-Title text-2xl md:text-4xl tracking-[6.5%]">
+        </span> */}
+        <h2 className="font-Source text-5xl md:text-7xl tracking-[6.5%] transform hover:text-darkOrange hover:translate-x-2 transition duration-300">
           {translate("about.title")}
         </h2>
       </div>

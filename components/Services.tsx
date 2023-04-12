@@ -10,12 +10,12 @@ const Services = () => {
   const { t: translate } = useTranslation("index");
 
   return (
-    <div className="flex flex-col md:px-44 px-9 py-40 dark:bg-lightBlack bg-white xl:h-full md:h-full">
+    <div className="flex flex-col md:px-44 px-9 py-40 dark:bg-darkBlack bg-white xl:h-full md:h-full">
       <div className="flex justify-start items-center gap-3 w-full ">
-        <span className="font-Source text-sm md:text-xl text-lightOrange">
+        {/* <span className="font-Source text-sm md:text-xl text-lightOrange">
           [2]
-        </span>
-        <h2 className="font-Title text-2xl md:text-4xl tracking-[6.5%]">
+        </span> */}
+        <h2 className="font-Source text-5xl md:text-7xl transform hover:text-darkOrange hover:translate-x-2 transition duration-300">
           {translate("services.title")}
         </h2>
       </div>
