@@ -8,6 +8,7 @@ import About from "../components/About";
 import Services from "../components/Services";
 import Projects from "../components/Projects";
 import SocialMedia from "../components/SocialMedia";
+import Form from "../components/Form";
 
 const Home: NextPage = () => {
   const { locale, locales, push } = useRouter();
@@ -45,14 +46,18 @@ const Home: NextPage = () => {
           <h2 className="text-5xl sm:text-6xl leading-[4rem] md:leading-[4rem] font-regular text-darkBlack dark:text-white py-3 max-w-[1200px] pr-2 sm:pr-0 ">
             {translate("header.body")}
           </h2>
-          <button className="text-lg shadow-xl hover:shadow-none transition-shadow text-lightOrange rounded-2xl bg-[#D9D2CF] dark:bg-transparent dark:border-solid dark:border-2 py-[23px] px-[35px] mt-10 border-orange-400  ">
+          <a
+            href="/#contact"
+            className="text-lg shadow-xl hover:shadow-none transition-shadow text-lightOrange rounded-2xl bg-[#D9D2CF] dark:bg-transparent dark:border-solid dark:border-2 py-[23px] px-[35px] mt-10 border-orange-400"
+          >
             {translate("header.button")}
-          </button>
+          </a>
         </div>
       </div>
       <Services />
       <Projects />
       <About />
+      <Form />
     </>
   );
 };
