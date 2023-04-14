@@ -7,6 +7,7 @@ import Menu from "../components/Menu";
 import About from "../components/About";
 import Services from "../components/Services";
 import Projects from "../components/Projects";
+import SocialMedia from "../components/SocialMedia";
 
 const Home: NextPage = () => {
   const { locale, locales, push } = useRouter();
@@ -29,6 +30,7 @@ const Home: NextPage = () => {
   return (
     <>
       <Menu locales={locales} />
+      <SocialMedia />
       <div className="pl-10 pr-3 pt-12 w-full h-screen flex-col flex items-start px-9 lg:px-44 justify-center bg-white dark:bg-lightBlack">
         <div className="flex flex-col items-start">
           <div className="flex flex-wrap gap-2">
