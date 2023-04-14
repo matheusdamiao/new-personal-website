@@ -67,4 +67,8 @@
         "text":"O objetivo do projeto foi desenvolver um website completo para um fotógrafo. Após uma pesquisa de benchmarking, decidi por categorizar os ensaios, inserir relatos dos clientes e adicionar botões fixos de contato. ",
         "techs":"Techs: HTML, CSS, JavaScript, Figma"
     }
+},
+"contact": {
+    "title": "Vamos fazer um projeto?",
+    "text": "Preencha o formulário abaixo ou, se preferir, você pode me mandar uma mensagem em alguma das minhas redes sociais"
 }}
