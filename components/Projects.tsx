@@ -12,8 +12,8 @@ const Projects = () => {
 
   // md:px-44
   return (
-    <div className="flex flex-col w-full md:h-full lg:h-full items-center  px-9 py-40 dark:bg-lightBlack bg-white">
-      <div className="flex justify-start items-end gap-1 w-full">
+    <div className="flex flex-col w-full md:h-full lg:h-full items-center py-40 dark:bg-lightBlack bg-white">
+      <div className="flex justify-start items-end gap-1 w-full px-9">
         {/* <span className="font-Source text-xl md:text-xl text-lightOrange">
           [3]
         </span> */}
@@ -23,25 +23,30 @@ const Projects = () => {
       </div>
 
       <div className="flex flex-col flex-wrap w-full">
-        <div className="flex xl:flex-wrap flex-col items-center xl:h-full mt-28 mb-40 md:mb-0 xl:mt-40">
-          <h2 className="text-2xl font-semibold text-darkBlack dark:text-white lg:text-2xl pt-16">
+        <div className="flex flex-wrap flex-col mt-28 mb-40 md:mb-0 xl:mt-40">
+          <h2 className="text-2xl font-semibold text-darkBlack dark:text-white lg:text-2xl pt-16 px-9">
             {" "}
             {translate("projects.project1.title")}{" "}
           </h2>
-          <h3 className="text-sm pt-2 text-lightGray dark:text-lightGray lg:text-lg">
+          <h3 className="text-sm pt-2 text-lightGray dark:text-lightGray lg:text-lg px-9">
             {" "}
             {translate("projects.project1.subtitle")}
           </h3>
-          <div className="pt-12 ">
-            <Image className="" src={advogadas} alt="" />
-          </div>
 
-          <p className="max-w-[500px] text-base text-darkGray dark:text-white lg:text-base pb-10">
-            {translate("projects.project1.text")}
-          </p>
-          <h4 className="text-base text-lightGray lg:text-sm hover:text-lightOrange duration-500">
-            {translate("projects.project1.techs")}
-          </h4>
+          <div className="flex flex-row flex-wrap xl:flex-nowrap items-center">
+            <div className="pt-12 shrink-1 flex xl:flex-none">
+              <Image className="w-full" src={advogadas} alt="" />
+            </div>
+
+            <div className="w-full shrink-[2]">
+              <p className="text-base text-darkGray dark:text-white lg:text-base pb-2 px-9">
+                {translate("projects.project1.text")}
+              </p>
+              <h4 className="text-base text-lightGray lg:text-sm hover:text-lightOrange duration-500 px-9">
+                {translate("projects.project1.techs")}
+              </h4>
+            </div>
+          </div>
         </div>
 
         <div className="flex xl:flex-wrap flex-col xl:h-screen mb-40 md:mb-0 mt-10 xl:mt-40">
