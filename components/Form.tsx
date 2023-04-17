@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useTranslation } from "react-i18next";
+import axios from "axios";
 
 const Form = () => {
   const { t: translate } = useTranslation("index");
@@ -9,11 +10,28 @@ const Form = () => {
     text: "",
   });
 
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     console.log(formData);
+
+    try {
+      const res = await axios.post("/api/form", {
+        formData,
+      });
+      if (res.status === 200) {
+        console.log("Tudo certo com o POST");
+      } else {
+        console.log("Deu erro no Post");
+      }
+    } catch (e) {
+      console.log(e);
+    }
+
+    // const res = await axios.get("/api/form");
+    // const data = await res.data;
+    // console.log(data);
+
     setFormData({ name: "", email: "", text: "" });
-    alert(`Obrigado, ${formData.name}! Logo mais já te respondo :) `);
   };
 
   const handleInput = (
@@ -38,6 +56,7 @@ const Form = () => {
       </div>
       <p className="w-full lg:mt-16 mt-20">{translate("contact.text")}</p>
       <form
+        method="POST"
         className="flex flex-col items-start gap-2 lg:pt-16 pt-10 max-w-xs w-full"
         onSubmit={(e) => handleSubmit(e)}
       >
