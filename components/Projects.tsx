@@ -10,8 +10,9 @@ import Image from "next/image";
 const Projects = () => {
   const { t: translate } = useTranslation("index");
 
+  // md:px-44
   return (
-    <div className="flex flex-col w-full md:h-full lg:h-full items-center md:px-44 px-9 py-40 dark:bg-lightBlack bg-white">
+    <div className="flex flex-col w-full md:h-full lg:h-full items-center  px-9 py-40 dark:bg-lightBlack bg-white">
       <div className="flex justify-start items-end gap-1 w-full">
         {/* <span className="font-Source text-xl md:text-xl text-lightOrange">
           [3]
@@ -22,7 +23,7 @@ const Projects = () => {
       </div>
 
       <div className="flex flex-col flex-wrap w-full">
-        <div className="flex xl:flex-wrap flex-col xl:h-screen mt-28 mb-40 md:mb-0 xl:mt-40">
+        <div className="flex xl:flex-wrap flex-col items-center xl:h-full mt-28 mb-40 md:mb-0 xl:mt-40">
           <h2 className="text-2xl font-semibold text-darkBlack dark:text-white lg:text-2xl pt-16">
             {" "}
             {translate("projects.project1.title")}{" "}
@@ -31,15 +32,11 @@ const Projects = () => {
             {" "}
             {translate("projects.project1.subtitle")}
           </h3>
-          <div className="pt-12 lg:order-6 ">
-            <Image
-              className="opacity-40 hover:opacity-100 hover:scale-105 transition duration-300"
-              src={advogadas}
-              alt=""
-            />
+          <div className="pt-12 ">
+            <Image className="" src={advogadas} alt="" />
           </div>
 
-          <p className="max-w-[500px] text-base text-darkGray dark:text-white lg:text-base pb-10 xl:py-20">
+          <p className="max-w-[500px] text-base text-darkGray dark:text-white lg:text-base pb-10">
             {translate("projects.project1.text")}
           </p>
           <h4 className="text-base text-lightGray lg:text-sm hover:text-lightOrange duration-500">
@@ -57,11 +54,7 @@ const Projects = () => {
             {translate("projects.project2.subtitle")}
           </h3>
           <div className="pt-12 lg:order-6">
-            <Image
-              className="opacity-40 hover:opacity-100 hover:scale-105 transition duration-300"
-              src={dashboard}
-              alt=""
-            />
+            <Image className="" src={dashboard} alt="" />
           </div>
 
           <p className="max-w-[500px] text-base text-darkGray dark:text-white lg:text-base pb-10 xl:py-20">
