@@ -3,15 +3,11 @@ import ToggleLanguage from "./ToggleLanguage";
 import ToggleTheme from "./ToggleTheme";
 import logo from "./../assets/images/logo_md.svg";
 import logoWhite from "./../assets/images/logoWhite.svg";
-// import logo from "./../assets/icons/logo-brand-dark.svg";
-// import logoWhite from "./../assets/icons/logo-brand-light.svg";
-import logoWhite1 from "./../assets/icons/logo-brand-light1.svg";
-import logo1 from "./../assets/icons/logo-brand-dark1.svg";
-
 import Image from "next/image";
 import { useTheme } from "next-themes";
+import { motion } from "framer-motion";
 
-type Language = {
+export type Language = {
   locales: string[] | undefined;
 };
 
@@ -19,13 +15,18 @@ const Menu = ({ locales }: Language) => {
   const { theme } = useTheme();
 
   return (
-    <div className="flex items-end z-50 justify-between w-full px-10 py-3 fixed bg-white dark:bg-lightBlack bg-opacity-50 backdrop-blur-sm dark:bg-opacity-50">
+    <motion.div
+      initial={{ x: -2000 }}
+      animate={{ x: 0 }}
+      transition={{ delay: 1 }}
+      className="flex items-end z-50 justify-between w-full px-10 py-3 fixed bg-white dark:bg-lightBlack bg-opacity-50 backdrop-blur-sm dark:bg-opacity-50"
+    >
       <Image alt="" src={theme === "dark" ? logo : logoWhite} width={80} />
       <div className="flex">
         <ToggleLanguage locales={locales} />
         <ToggleTheme />
       </div>
-    </div>
+    </motion.div>
   );
 };
 
