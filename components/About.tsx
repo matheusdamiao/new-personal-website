@@ -2,6 +2,7 @@ import Image from "next/image";
 import React, { useState } from "react";
 import avatar from "./../assets/images/avatar.svg";
 import { useTranslation } from "react-i18next";
+import { motion } from "framer-motion";
 
 const About = () => {
   const [readMore, setReadMore] = useState(false);
@@ -9,15 +10,22 @@ const About = () => {
 
   return (
     <div className="flex flex-col w-full md:h-full lg:h-full items-center md:px-44 px-9 py-40 dark:bg-darkBlack bg-white ">
-      <div className="flex justify-start items-center gap-3 w-full">
-        {/* <span className="font-Source text-sm md:text-xl text-lightOrange">
-          [1]
-        </span> */}
+      <motion.div
+        initial={{ x: -100, opacity: 0 }}
+        whileInView={{ x: 0, opacity: 1 }}
+        transition={{ type: "spring" }}
+        className="flex justify-start items-center gap-3 w-full"
+      >
         <h2 className="font-Source text-5xl md:text-7xl tracking-[6.5%] transform hover:text-darkOrange hover:translate-x-2 transition duration-300">
           {translate("about.title")}
         </h2>
-      </div>
-      <div className="flex pt-[40px] w-full gap-8 justify-center lg:justify-start lg:gap-22 xl:gap-52 flex-wrap-reverse lg:flex-nowrap">
+      </motion.div>
+      <motion.div
+        initial={{ x: -100, opacity: 0 }}
+        whileInView={{ x: 0, opacity: 1 }}
+        transition={{ type: "spring" }}
+        className="flex pt-[40px] w-full gap-8 justify-center lg:justify-start lg:gap-22 xl:gap-52 flex-wrap-reverse lg:flex-nowrap"
+      >
         <div className="flex justify-center">
           <p className="font-Source max-w-[900px] text-sm md:text-lg leading-[32px] md:leading-[32px] text-lightBlack dark:text-white">
             {translate("about.body")}
@@ -31,8 +39,13 @@ const About = () => {
         <div className=" md:max-w-[250px]">
           <Image src={avatar} alt="" className="md:w-full w-32" />
         </div>
-      </div>
-      <div className="flex flex-col w-full">
+      </motion.div>
+      <motion.div
+        initial={{ x: -100, opacity: 0 }}
+        whileInView={{ x: 0, opacity: 1 }}
+        transition={{ type: "spring" }}
+        className="flex flex-col w-full"
+      >
         <div>
           <h3 className="font-Source text-darkBlack dark:text-white text-sm md:text-lg font-semibold py-7 ">
             {translate("about.techs.title")}
@@ -49,7 +62,7 @@ const About = () => {
             <li className="list-disc">{translate("about.techs.topic5")}</li>
           </ul>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 };

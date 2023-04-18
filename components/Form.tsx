@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useTranslation } from "react-i18next";
 import axios from "axios";
+import { motion } from "framer-motion";
 
 const Form = () => {
   const { t: translate } = useTranslation("index");
@@ -49,13 +50,28 @@ const Form = () => {
       id="contact"
       className="flex flex-col w-full md:h-full lg:h-full items-start md:px-44 px-9 py-40 dark:bg-darkBlack bg-white "
     >
-      <div className="flex justify-start items-center gap-3 w-full">
+      <motion.div
+        initial={{ x: -100, opacity: 0 }}
+        whileInView={{ x: 0, opacity: 1 }}
+        transition={{ type: "spring" }}
+        className="flex justify-start items-center gap-3 w-full"
+      >
         <h2 className="font-Source text-5xl md:text-7xl tracking-[6.5%] transform hover:text-darkOrange hover:translate-x-2 transition duration-300">
           {translate("contact.title")}
         </h2>
-      </div>
-      <p className="w-full lg:mt-16 mt-20">{translate("contact.text")}</p>
-      <form
+      </motion.div>
+      <motion.p
+        initial={{ x: -100, opacity: 0 }}
+        whileInView={{ x: 0, opacity: 1 }}
+        transition={{ type: "spring" }}
+        className="w-full lg:mt-16 mt-20"
+      >
+        {translate("contact.text")}
+      </motion.p>
+      <motion.form
+        initial={{ x: -100, opacity: 0 }}
+        whileInView={{ x: 0, opacity: 1 }}
+        transition={{ type: "spring" }}
         method="POST"
         className="flex flex-col items-start gap-2 lg:pt-16 pt-10 max-w-xs w-full"
         onSubmit={(e) => handleSubmit(e)}
@@ -97,7 +113,7 @@ const Form = () => {
           {" "}
           Enviar mensagem
         </button>
-      </form>
+      </motion.form>
     </div>
   );
 };
