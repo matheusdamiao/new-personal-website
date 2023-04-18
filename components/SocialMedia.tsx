@@ -1,14 +1,8 @@
 import React from "react";
-import git from "./../assets/icons/github_icon.svg";
-import instagram from "./../assets/icons/instagram_icon.svg";
-import linkedin from "./../assets/icons/linkedin_icon.svg";
-import zap from "./../assets/icons/zap_icon.svg";
-import Image from "next/image";
-import test from "./../assets/icons/git_test.svg";
 
 const SocialMedia = () => {
   return (
-    <div className="flex fixed bottom-0 items-center justify-evenly flex-row w-full h-12 bg-opacity-50 backdrop-blur-sm lg:w-min lg:h-min bg-darkGray lg:bg-transparent lg:flex-col lg:items-center lg:gap-8 lg:bottom-5 lg:right-12  ">
+    <div className="flex z-40 fixed bottom-0 items-center justify-evenly flex-row w-full h-12 bg-opacity-50 backdrop-blur-sm lg:w-min lg:h-min bg-darkGray lg:bg-transparent lg:flex-col lg:items-center lg:gap-8 lg:bottom-5 lg:right-12  ">
       <svg
         className="dark:hover:fill-white w-7 h-7 dark:fill-lightGray cursor-pointer hover:scale-150 duration-200"
         viewBox="0 0 27 27"
