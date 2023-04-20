@@ -33,7 +33,7 @@ const ToggleLanguage = ({ locales }: Language): JSX.Element => {
     //   })}
     // </div>
 
-    <div className="">
+    <div className="z-20">
       {locales
         ?.filter((lang) => lang !== locale)
         .map((l) => {
@@ -43,12 +43,13 @@ const ToggleLanguage = ({ locales }: Language): JSX.Element => {
               className="p-2 uppercase"
               onClick={() => changeLocale(l)}
             >
-              <Image
+              {/* <Image
                 src={l === "pt" ? brazil : usa}
                 alt=""
                 width={25}
                 height={25}
-              />
+              /> */}
+              {l === "pt" ? "PT" : "EN"}
             </button>
           );
         })}
