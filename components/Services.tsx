@@ -11,7 +11,10 @@ const Services = () => {
   const { t: translate } = useTranslation("index");
 
   return (
-    <div className="flex flex-col md:px-44 px-9 py-40 dark:bg-darkBlack bg-white xl:h-full md:h-full">
+    <div
+      id="services"
+      className="flex flex-col md:px-44 px-9 py-40 dark:bg-darkBlack bg-white xl:h-full md:h-full"
+    >
       <motion.div
         initial={{ x: -100, opacity: 0 }}
         whileInView={{ x: 0, opacity: 1 }}

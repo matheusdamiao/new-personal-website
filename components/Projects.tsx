@@ -12,7 +12,10 @@ const Projects = () => {
   const { t: translate } = useTranslation("index");
 
   return (
-    <div className="flex flex-col flex-wrap w-full md:h-full lg:h-full items-center py-40 dark:bg-lightBlack bg-white">
+    <div
+      id="projects"
+      className="flex flex-col flex-wrap w-full md:h-full lg:h-full items-center py-40 dark:bg-lightBlack bg-white"
+    >
       <motion.div
         initial={{ x: -100, opacity: 0 }}
         whileInView={{ x: 0, opacity: 1 }}

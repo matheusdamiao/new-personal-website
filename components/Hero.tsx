@@ -20,7 +20,10 @@ const Hero = () => {
           className="rounded-full border-solid border-x-2 border-lightGray w-[300px] h-[300px] animate-pulse"
         ></motion.div>
       </div> */}
-      <div className="pl-10 pr-3 pt-12 w-full h-screen flex-col flex items-start px-9 lg:px-44 justify-center bg-white dark:bg-lightBlack">
+      <div
+        id="hero"
+        className="pl-10 pr-3 pt-12 w-full h-screen flex-col flex items-start px-9 lg:px-44 justify-center bg-white dark:bg-lightBlack"
+      >
         <div className="flex flex-col items-start z-10">
           <div className="flex flex-wrap gap-2">
             <motion.div
