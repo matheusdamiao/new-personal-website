@@ -39,7 +39,7 @@
 "projects":{
     "title": "Selected projects",
     "project1": {
-        "title":"Cupullile e Medeiros Lawyers",
+        "title":"Cupulille e Medeiros Lawyers",
         "subtitle":"Institutional website + blog",
         "text":"After a rebranding, I built this institutional website with a new logo, which, alongside the new monochromatic pallete color, brings seriousness and lightness to design. The logo uses letter M to represent the image of deal between people, which is an essential value present in the legal practice of these two lawyers",
         "techs":"Techs: GatsbyJS, NetlifyCMS, Sass, Netlify"
