@@ -48,7 +48,7 @@ const Hero = () => {
             initial={{ x: -1500, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
             transition={{ delay: 3.2 }}
-            className="text-5xl sm:text-6xl leading-[4rem] md:leading-[4rem] font-regular text-darkBlack dark:text-white py-3 max-w-[1200px] pr-2 sm:pr-0 "
+            className="text-4xl sm:text-6xl leading-[3rem] md:leading-[4rem] font-regular text-darkBlack dark:text-white py-2 max-w-[1200px] pr-2 sm:pr-0 "
           >
             {translate("header.body")}
           </motion.div>
@@ -58,7 +58,7 @@ const Hero = () => {
             transition={{ delay: 4 }}
             whileHover={{ scale: 1.1 }}
           >
-            {locales
+            {/* {locales
               ?.filter((loc) => loc === locale)
               .map((l) => (
                 <a
@@ -68,7 +68,7 @@ const Hero = () => {
                 >
                   {translate("header.button")}
                 </a>
-              ))}
+              ))} */}
           </motion.div>
         </div>
       </div>
