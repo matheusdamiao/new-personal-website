@@ -51,23 +51,57 @@ const Menu = ({ locales }: Language) => {
       >
         <Image alt="" src={theme === "dark" ? logo : logoWhite} width={80} />
         <div className="">
-          <ul className="hidden lg:flex justify-evenly items-center gap-5">
-            <li className="flex items-center justify-center">
-              <a href={locale === "pt" ? "/" : "/en"}>Home</a>
-            </li>
-            <li>
-              <a href={locale === "pt" ? "#services" : "#services"}>Services</a>
-            </li>
-            <li>
-              <a href={locale === "pt" ? "/#projects" : "#projects"}>
-                Projects
+          <ul className="hidden lg:flex justify-evenly items-center gap-12 dark:text-lightGray text-lightGray">
+            <li className="flex group items-center justify-center">
+              <span className="opacity-0 group-hover:opacity-100 transition duration-200 group-hover:-scale-x-[10] w-1 h-1 bg-red-300 absolute top-16" />
+              <a
+                className="dark:group-hover:text-white group-hover:text-lightBlack transition duration-200"
+                href={locale === "pt" ? "/" : "/en"}
+              >
+                Home
               </a>
             </li>
-            <li>
-              <a href={locale === "pt" ? "/#about" : "#about"}>About</a>
+            <li className="flex group items-center justify-center">
+              <span className="opacity-0 group-hover:opacity-100 transition duration-200 group-hover:-scale-x-[10] w-1 h-1 bg-red-300 absolute top-16" />
+
+              <a
+                className="dark:group-hover:text-white group-hover:text-lightBlack transition duration-200"
+                href={locale === "pt" ? "#services" : "#services"}
+              >
+                {locale === "pt" ? "Serviços" : "Services"}
+              </a>
             </li>
-            <li>
-              <a href={locale === "pt" ? "/#contact" : "#contact"}>Contact</a>
+            <li className="flex group items-center justify-center">
+              <span className="opacity-0 group-hover:opacity-100 transition duration-200 group-hover:-scale-x-[10] w-1 h-1 bg-red-300 absolute top-16" />
+
+              <a
+                className="dark:group-hover:text-white group-hover:text-lightBlack transition duration-200"
+                href={locale === "pt" ? "/#projects" : "#projects"}
+              >
+                {locale === "pt" ? "Projetos" : "Projects"}
+              </a>
+            </li>
+            <li className="flex group items-center justify-center">
+              <span className="opacity-0 group-hover:opacity-100 transition duration-200 group-hover:-scale-x-[10] w-1 h-1 bg-red-300 absolute top-16" />
+
+              <a
+                className="dark:group-hover:text-white group-hover:text-lightBlack transition duration-200"
+                href={locale === "pt" ? "/#about" : "#about"}
+              >
+                {" "}
+                {locale === "pt" ? "Sobre" : "About"}
+              </a>
+            </li>
+            <li className="flex group items-center justify-center">
+              <span className="opacity-0 group-hover:opacity-100 transition duration-200 group-hover:-scale-x-[10] w-1 h-1 bg-red-300 absolute top-16" />
+
+              <a
+                className="dark:group-hover:text-white group-hover:text-lightBlack transition duration-200"
+                href={locale === "pt" ? "/#contact" : "#contact"}
+              >
+                {" "}
+                {locale === "pt" ? "Contato" : "Contact"}
+              </a>
             </li>
           </ul>
           <motion.nav
