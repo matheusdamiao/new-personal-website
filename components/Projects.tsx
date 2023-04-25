@@ -58,7 +58,7 @@ const Projects = () => {
                 </button>
               </div>
               <div>
-                <p className="pl-8 lg:pl-0 text-sm text-darkGray lg:w-4/5 dark:text-white lg:text-base pb-2">
+                <p className="pl-8 lg:pl-0 text-xs text-darkGray lg:w-4/5 dark:text-white lg:text-base pb-2">
                   {translate("projects.project1.text")}
                 </p>
                 <h4 className="pl-8 lg:pl-0 text-sm text-lightGray pt-4 lg:text-sm hover:text-lightOrange duration-500">
@@ -99,7 +99,7 @@ const Projects = () => {
                 </button>
               </div>
               <div>
-                <p className="pl-8 lg:pl-0 text-sm text-darkGray lg:w-4/5 dark:text-white lg:text-base pb-2">
+                <p className="pl-8 lg:pl-0 text-xs text-darkGray lg:w-4/5 dark:text-white lg:text-base pb-2">
                   {translate("projects.project3.text")}
                 </p>
                 <h4 className="pl-8 lg:pl-0 text-sm text-lightGray pt-4 lg:text-sm hover:text-lightOrange duration-500">
@@ -140,7 +140,7 @@ const Projects = () => {
                 </button>
               </div>
               <div>
-                <p className="pl-8 lg:pl-0 text-sm text-darkGray lg:w-4/5 dark:text-white lg:text-base pb-2">
+                <p className="pl-8 lg:pl-0 text-xs text-darkGray lg:w-4/5 dark:text-white lg:text-base pb-2">
                   {translate("projects.project4.text")}
                 </p>
                 <h4 className="pl-8 lg:pl-0 text-sm text-lightGray pt-4 lg:text-sm hover:text-lightOrange duration-500">
@@ -181,7 +181,7 @@ const Projects = () => {
                 </button>
               </div>
               <div>
-                <p className="pl-8 lg:pl-0 text-sm text-darkGray lg:w-4/5 dark:text-white lg:text-base pb-2">
+                <p className="pl-8 lg:pl-0 text-xs text-darkGray lg:w-4/5 dark:text-white lg:text-base pb-2">
                   {translate("projects.project5.text")}
                 </p>
                 <h4 className="pl-8 lg:pl-0 text-sm text-lightGray pt-4 lg:text-sm hover:text-lightOrange duration-500">
@@ -222,7 +222,7 @@ const Projects = () => {
                 </button>
               </div>
               <div>
-                <p className="pl-8 lg:pl-0 text-sm text-darkGray lg:w-4/5 dark:text-white lg:text-base pb-2">
+                <p className="pl-8 lg:pl-0 text-xs text-darkGray lg:w-4/5 dark:text-white lg:text-base pb-2">
                   {translate("projects.project2.text")}
                 </p>
                 <h4 className="pl-8 lg:pl-0 text-sm text-lightGray pt-4 lg:text-sm hover:text-lightOrange duration-500">

@@ -22,7 +22,7 @@ const Hero = () => {
       </div> */}
       <div
         id="hero"
-        className="pl-10 pr-3 pt-12 w-full h-screen flex-col flex items-start px-9 lg:px-44 justify-center bg-white dark:bg-lightBlack"
+        className="pl-10 pr-3 pt-0 w-full h-screen flex-col flex items-start px-9 lg:px-44 justify-center bg-white dark:bg-lightBlack"
       >
         <div className="flex flex-col items-start z-10">
           <div className="flex flex-wrap gap-2">
@@ -30,7 +30,7 @@ const Hero = () => {
               initial={{ x: -200, opacity: 0, scale: 0 }}
               animate={{ x: 0, opacity: 1, scale: 1 }}
               transition={{ delay: 2 }}
-              className="text-base md:text-xl text-lightOrange dark:text-lightOrange "
+              className="text-xl md:text-xl text-lightOrange dark:text-lightOrange "
             >
               {translate("header.title")}
             </motion.div>
@@ -38,7 +38,7 @@ const Hero = () => {
               initial={{ x: -500, opacity: 0, scale: 0 }}
               animate={{ x: 0, opacity: 1, scale: 1 }}
               transition={{ delay: 2.5 }}
-              className="text-base md:text-xl text-darkBlack dark:text-white "
+              className="text-xl md:text-xl text-darkBlack dark:text-white "
             >
               {translate("header.subtitle")}
             </motion.div>
