@@ -22,7 +22,7 @@ const Hero = () => {
       </div> */}
       <div
         id="hero"
-        className="pl-10 pr-3 pt-0 w-full h-screen flex-col flex items-start px-9 lg:px-44 justify-center bg-white dark:bg-lightBlack"
+        className="pl-10 pr-3 pt-0 w-full h-[80vh] md:h-screen flex-col flex items-start px-9 lg:px-44 justify-center bg-white dark:bg-lightBlack"
       >
         <div className="flex flex-col items-start z-10">
           <div className="flex flex-wrap gap-2">
