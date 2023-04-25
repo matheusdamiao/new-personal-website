@@ -110,7 +110,7 @@ const Menu = ({ locales }: Language) => {
             className="w-full lg:hidden h-full absolute left-0 top-0 z-[100]"
           >
             <motion.div
-              className="bg-darkOrange opacity-40 w-full h-[500px] flex items-center flex-col justify-evenly "
+              className="bg-lightGray w-full h-[500px] flex items-center flex-col justify-evenly "
               variants={sidebar}
             >
               <a
