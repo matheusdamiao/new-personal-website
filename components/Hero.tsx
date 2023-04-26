@@ -16,13 +16,12 @@ const Hero = () => {
           animate={{ x: 0, opacity: 0.4, scale: 1.5 }}
           transition={{ type: "spring", stiffness: 200 }}
           whileHover={{ scale: 3, opacity: 0.1 }}
-          
-          className="rounded-full border-solid border-x-2 border-lightGray w-[300px] h-[300px] animate-pulse"
+          className="rounded-full border-solid border-x-2 border-lightGray w-[300px] h-[300px] animate-pulse "
         ></motion.div>
       </div> */}
       <div
         id="hero"
-        className="pl-10 pr-3 pt-0 w-full h-[80vh] md:h-screen flex-col flex items-start px-9 lg:px-44 justify-center bg-white dark:bg-lightBlack"
+        className="relative pl-10 pr-3 pt-0 w-full h-[80vh] md:h-screen flex-col flex items-start px-9 lg:px-44 justify-center bg-white dark:bg-lightBlack"
       >
         <div className="flex flex-col items-start z-10">
           <div className="flex flex-wrap gap-2">
@@ -52,13 +51,13 @@ const Hero = () => {
           >
             {translate("header.body")}
           </motion.div>
-          <motion.div
+          {/* <motion.div
             initial={{ x: -1000 }}
             animate={{ x: 0, y: 50 }}
             transition={{ delay: 4 }}
             whileHover={{ scale: 1.1 }}
-          >
-            {/* {locales
+          > */}
+          {/* {locales
               ?.filter((loc) => loc === locale)
               .map((l) => (
                 <a
@@ -69,9 +68,42 @@ const Hero = () => {
                   {translate("header.button")}
                 </a>
               ))} */}
-          </motion.div>
+          {/* </motion.div> */}
         </div>
       </div>
+      <motion.svg
+        className="absolute bottom-14 md:bottom-0 left-[45%] "
+        width={100}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 4 }}
+      >
+        <motion.path
+          d="M0 0 L30 32 L60 0"
+          className="fill-none stroke-darkGray stroke-[3px]"
+          initial={{ y: 0, opacity: 1 }}
+          animate={{ y: 50, opacity: [1, 0.5, 0] }}
+          transition={{
+            repeat: Infinity,
+            repeatType: "loop",
+            duration: 2,
+            delay: 1,
+          }}
+        />
+        <motion.path
+          d="M0 0 L30 32 L60 0"
+          className="fill-none stroke-darkOrange stroke-[3px]"
+          initial={{ y: 0, opacity: 1 }}
+          animate={{ y: 50, opacity: [1, 0.5, 0] }}
+          whileHover={{}}
+          transition={{
+            repeat: Infinity,
+            repeatType: "loop",
+            duration: 2,
+            delay: 2,
+          }}
+        />
+      </motion.svg>
     </>
   );
 };
