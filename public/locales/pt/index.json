@@ -1,7 +1,7 @@
 {"header": {
     "title": "Olá, meu nome é Matheus Damião. ",
     "subtitle": " Sou desenvolvedor web.",
-    "body": "Construo aplicações web com design & tecnologias modernas", 
+    "body": "Construo soluções para web com design & tecnologias modernas", 
     "button": "vamos trabalhar juntos"
 },
 "about": {
@@ -20,7 +20,7 @@
 "services": {
     "title": "O que eu faço",
     "topic1": {
-        "title": "Desenvolvimento de sites e aplicações web",
+        "title": "Desenvolvimento de sites institucionais e landing pages",
         "text": "Websites rápidos e seguros feitos com as mais novas tecnologias de desenvolvimento web, como GatsbyJS e NextJS."
     },
     "topic2": {
@@ -28,15 +28,15 @@
         "text": "Carregue textos, imagens e publique conteúdo no seu próprio site conectando-se a um Headless CMS, como Decap CMS ou Wordpress"
     },
     "topic3": {
-        "title": "User-friendly and responsive design",
+        "title": "Responsividade 100%",
         "text": "Do IPad ao celular, seu site 100% responsivo em todos os dispositivos e com design guiado pela melhor experiência do usuário (UX)"
     },
     "topic4": {
-        "title": "External services",
-        "text": "Conecte sua aplicação a outras APIs e tenha acesso a mais recursos"
+        "title": "Serviços da Web",
+        "text": "Conecte sua aplicação a outras APIs e tenha acesso a mais recursos, pagamentos, banco de dados, e muito mais"
     }
 },"projects":{
-    "title": "Projetos selecionados",
+    "title": "Projetos",
     "project1": {
         "title":"Cupulille e Medeiros Advogadas",
         "subtitle":"Site institucional + blog",

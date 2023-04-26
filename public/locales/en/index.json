@@ -1,7 +1,7 @@
 {"header": {
     "title": "Hi, my name is Matheus Damião. ",
     "subtitle": " I'm a web developer.",
-    "body": "I build web applications with modern technology & design",
+    "body": "I build web solutions with modern technology & design",
     "button": "let's work together"
 },
 "about": {
@@ -20,7 +20,7 @@
 "services": {
     "title": "What I do",
     "topic1": {
-        "title": "Website and web applications development",
+        "title": "Institutional websites and landing pages development",
         "text": "Secure and fast websites made with the newest web development technologies, like GatsbyJS and NextJS"
     },
     "topic2": {
@@ -28,16 +28,16 @@
         "text": "Upload texts, images and publish content from your own website by connecting to a Headless CMS, such as Decap CMS or Wordpress"
     },
     "topic3": {
-        "title": "User-friendly and responsive design",
+        "title": "100% Responsive",
         "text": "From IPads to cellphones, your website 100% responsive in all devices and designed to provide the best user experience (UX)"
     },
     "topic4": {
-        "title": "External services",
+        "title": "Web Services",
         "text": "Connect your application to other APIs and get access to more resources"
     }
 },
 "projects":{
-    "title": "Selected projects",
+    "title": "Projects",
     "project1": {
         "title":"Cupulille e Medeiros Lawyers",
         "subtitle":"Institutional website + blog",
