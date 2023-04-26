@@ -50,10 +50,10 @@ const Projects = () => {
 
             <div className="w-full flex flex-col-reverse">
               <div className="flex xl:w-full lg:justify-start lg:gap-2 xl:gap-10 flex-nowrap xl:flex-wrap justify-center gap-5">
-                <button className="py-4 px-6 text-base dark:shadow-lg shadow-lg shadow-darkGray dark:hover:shadow-none dark:border-none dark:shadow-darkGray hover:shadow-none transition-shadow dark:text-darkBlack text-white font-bold rounded-2xl bg-[#29201d] dark:bg-white dark:border-2 mt-10">
+                <button className="py-4 px-6 text-base dark:shadow-md shadow-md shadow-black dark:hover:shadow-none dark:border-none dark:shadow-black hover:shadow-none transition-shadow dark:text-darkBlack text-white font-bold rounded-2xl bg-[#29201d] dark:bg-white dark:border-2 mt-10">
                   Visite o site
                 </button>
-                <button className=" py-4 font-bold px-6 text-base shadow-lg dark:shadow-darkGray dark:shadow-lg dark:hover:shadow-none hover:shadow-none transition-shadow dark:text-white rounded-2xl dark:bg-transparent dark:border-solid dark:border-2 mt-10 dark:border-white border-solid border-2 border-black">
+                <button className=" py-4 font-bold px-6 text-base shadow-md shadow-black dark:shadow-black dark:shadow-md dark:hover:shadow-none hover:shadow-none transition-shadow dark:text-white rounded-2xl dark:bg-transparent dark:border-solid dark:border-2 mt-10 dark:border-white border-solid border-2 border-black">
                   Código{" "}
                 </button>
               </div>
@@ -173,7 +173,7 @@ const Projects = () => {
 
             <div className="w-full flex flex-col-reverse">
               <div className="flex xl:w-full lg:justify-start lg:gap-2 xl:gap-10 flex-nowrap xl:flex-wrap justify-center gap-5">
-                <button className="py-4 px-6 text-base dark:shadow-lg shadow-lg shadow-darkGray dark:hover:shadow-none dark:border-none dark:shadow-darkGray hover:shadow-none transition-shadow dark:text-darkBlack text-white font-bold rounded-2xl bg-[#29201d] dark:bg-white dark:border-2 mt-10">
+                <button className="py-4 px-6 text-base dark:shadow-lg shadow-md shadow-darkGray dark:hover:shadow-none dark:border-none dark:shadow-darkGray hover:shadow-none transition-shadow dark:text-darkBlack text-white font-bold rounded-2xl bg-[#29201d] dark:bg-white dark:border-2 mt-10">
                   Visite o site
                 </button>
                 <button className=" py-4 font-bold px-6 text-base shadow-lg dark:shadow-darkGray dark:shadow-lg dark:hover:shadow-none hover:shadow-none transition-shadow dark:text-white rounded-2xl dark:bg-transparent dark:border-solid dark:border-2 mt-10 dark:border-white border-solid border-2 border-black">
@@ -214,7 +214,7 @@ const Projects = () => {
 
             <div className="w-full flex flex-col-reverse">
               <div className="flex xl:w-full lg:justify-start lg:gap-2 xl:gap-10 flex-nowrap xl:flex-wrap justify-center gap-5">
-                <button className="py-4 px-6 text-base dark:shadow-lg shadow-lg shadow-darkGray dark:hover:shadow-none dark:border-none dark:shadow-darkGray hover:shadow-none transition-shadow dark:text-darkBlack text-white font-bold rounded-2xl bg-[#29201d] dark:bg-white dark:border-2 mt-10">
+                <button className="py-4 px-6 text-base dark:shadow-lg shadow-md shadow-darkGray dark:hover:shadow-none dark:border-none dark:shadow-darkGray hover:shadow-none transition-shadow dark:text-darkBlack text-white font-bold rounded-2xl bg-[#29201d] dark:bg-white dark:border-2 mt-10">
                   Visite o site
                 </button>
                 <button className=" py-4 font-bold px-6 text-base shadow-lg dark:shadow-darkGray dark:shadow-lg dark:hover:shadow-none hover:shadow-none transition-shadow dark:text-white rounded-2xl dark:bg-transparent dark:border-solid dark:border-2 mt-10 dark:border-white border-solid border-2 border-black">
