@@ -21,7 +21,7 @@ const Services = () => {
         transition={{ type: "spring" }}
         className="flex justify-start items-center gap-3 w-full "
       >
-        <h2 className="font-Source text-4xl md:text-7xl transform hover:text-darkOrange hover:translate-x-2 transition duration-300">
+        <h2 className="font-Source text-4xl md:text-7xl dark:text-white; transform hover:text-darkOrange hover:translate-x-2 transition duration-300">
           {translate("services.title")}
         </h2>
       </motion.div>
