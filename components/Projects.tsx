@@ -50,12 +50,20 @@ const Projects = () => {
 
             <div className="w-full flex flex-col-reverse">
               <div className="flex xl:w-full lg:justify-start lg:gap-2 xl:gap-10 flex-nowrap xl:flex-wrap justify-center gap-5">
-                <button className="py-4 px-6 text-base dark:shadow-md shadow-md shadow-black dark:hover:shadow-none dark:border-none dark:shadow-black hover:shadow-none transition-shadow dark:text-darkBlack text-white font-bold rounded-2xl bg-[#29201d] dark:bg-white dark:border-2 mt-10">
+                <a
+                  href="https://cupulilleemedeirosadvocacia.netlify.app/"
+                  target="_blank"
+                  className="py-4 px-6 text-base dark:shadow-md shadow-md shadow-black dark:hover:shadow-none dark:border-none dark:shadow-black hover:shadow-none transition-shadow dark:text-darkBlack text-white font-bold rounded-2xl bg-[#29201d] dark:bg-white dark:border-2 mt-10"
+                >
                   Visite o site
-                </button>
-                <button className=" py-4 font-bold px-6 text-base shadow-md shadow-black dark:shadow-black dark:shadow-md dark:hover:shadow-none hover:shadow-none transition-shadow dark:text-white rounded-2xl dark:bg-transparent dark:border-solid dark:border-2 mt-10 dark:border-white border-solid border-2 border-black">
+                </a>
+                <a
+                  href="https://github.com/matheusdamiao/gatsby-blog"
+                  target="_blank"
+                  className=" py-4 font-bold px-6 text-base shadow-md shadow-black dark:shadow-black dark:shadow-md dark:hover:shadow-none hover:shadow-none transition-shadow dark:text-white rounded-2xl dark:bg-transparent dark:border-solid dark:border-2 mt-10 dark:border-white border-solid border-2 border-black"
+                >
                   Código{" "}
-                </button>
+                </a>
               </div>
               <div>
                 <p className="pl-8 lg:pl-0 text-xs text-darkGray lg:w-4/5 dark:text-white lg:text-base pb-2">
@@ -91,12 +99,20 @@ const Projects = () => {
 
             <div className="w-full flex flex-col-reverse">
               <div className="flex xl:w-full lg:justify-start lg:gap-2 xl:gap-10 flex-nowrap xl:flex-wrap justify-center gap-5">
-                <button className="py-4 px-6 text-base dark:shadow-lg shadow-lg shadow-darkGray dark:hover:shadow-none dark:border-none dark:shadow-darkGray hover:shadow-none transition-shadow dark:text-darkBlack text-white font-bold rounded-2xl bg-[#29201d] dark:bg-white dark:border-2 mt-10">
+                <a
+                  href="https://site-advogado-template.netlify.app/"
+                  target="_blank"
+                  className="py-4 px-6 text-base dark:shadow-md shadow-md shadow-black dark:hover:shadow-none dark:border-none dark:shadow-black hover:shadow-none transition-shadow dark:text-darkBlack text-white font-bold rounded-2xl bg-[#29201d] dark:bg-white dark:border-2 mt-10"
+                >
                   Visite o site
-                </button>
-                <button className=" py-4 font-bold px-6 text-base shadow-lg dark:shadow-darkGray dark:shadow-lg dark:hover:shadow-none hover:shadow-none transition-shadow dark:text-white rounded-2xl dark:bg-transparent dark:border-solid dark:border-2 mt-10 dark:border-white border-solid border-2 border-black">
+                </a>
+                <a
+                  href="https://github.com/matheusdamiao/template-lawyer-site"
+                  target="_blank"
+                  className=" py-4 font-bold px-6 text-base shadow-md shadow-black dark:shadow-black dark:shadow-md dark:hover:shadow-none hover:shadow-none transition-shadow dark:text-white rounded-2xl dark:bg-transparent dark:border-solid dark:border-2 mt-10 dark:border-white border-solid border-2 border-black"
+                >
                   Código{" "}
-                </button>
+                </a>
               </div>
               <div>
                 <p className="pl-8 lg:pl-0 text-xs text-darkGray lg:w-4/5 dark:text-white lg:text-base pb-2">
@@ -132,12 +148,20 @@ const Projects = () => {
 
             <div className="w-full flex flex-col-reverse">
               <div className="flex xl:w-full lg:justify-start lg:gap-2 xl:gap-10 flex-nowrap xl:flex-wrap justify-center gap-5">
-                <button className="py-4 px-6 text-base dark:shadow-lg shadow-lg shadow-darkGray dark:hover:shadow-none dark:border-none dark:shadow-darkGray hover:shadow-none transition-shadow dark:text-darkBlack text-white font-bold rounded-2xl bg-[#29201d] dark:bg-white dark:border-2 mt-10">
+                <a
+                  href="https://master--zippy-cascaron-772f17.netlify.app/"
+                  target="_blank"
+                  className="py-4 px-6 text-base dark:shadow-md shadow-md shadow-black dark:hover:shadow-none dark:border-none dark:shadow-black hover:shadow-none transition-shadow dark:text-darkBlack text-white font-bold rounded-2xl bg-[#29201d] dark:bg-white dark:border-2 mt-10"
+                >
                   Visite o site
-                </button>
-                <button className=" py-4 font-bold px-6 text-base shadow-lg dark:shadow-darkGray dark:shadow-lg dark:hover:shadow-none hover:shadow-none transition-shadow dark:text-white rounded-2xl dark:bg-transparent dark:border-solid dark:border-2 mt-10 dark:border-white border-solid border-2 border-black">
+                </a>
+                <a
+                  href="https://github.com/matheusdamiao/portfolio-graphic-designer"
+                  target="_blank"
+                  className=" py-4 font-bold px-6 text-base shadow-md shadow-black dark:shadow-black dark:shadow-md dark:hover:shadow-none hover:shadow-none transition-shadow dark:text-white rounded-2xl dark:bg-transparent dark:border-solid dark:border-2 mt-10 dark:border-white border-solid border-2 border-black"
+                >
                   Código{" "}
-                </button>
+                </a>
               </div>
               <div>
                 <p className="pl-8 lg:pl-0 text-xs text-darkGray lg:w-4/5 dark:text-white lg:text-base pb-2">
@@ -173,12 +197,20 @@ const Projects = () => {
 
             <div className="w-full flex flex-col-reverse">
               <div className="flex xl:w-full lg:justify-start lg:gap-2 xl:gap-10 flex-nowrap xl:flex-wrap justify-center gap-5">
-                <button className="py-4 px-6 text-base dark:shadow-lg shadow-md shadow-darkGray dark:hover:shadow-none dark:border-none dark:shadow-darkGray hover:shadow-none transition-shadow dark:text-darkBlack text-white font-bold rounded-2xl bg-[#29201d] dark:bg-white dark:border-2 mt-10">
+                <a
+                  href="https://matheusdamiao.github.io/site_fotografo"
+                  target="_blank"
+                  className="py-4 px-6 text-base dark:shadow-md shadow-md shadow-black dark:hover:shadow-none dark:border-none dark:shadow-black hover:shadow-none transition-shadow dark:text-darkBlack text-white font-bold rounded-2xl bg-[#29201d] dark:bg-white dark:border-2 mt-10"
+                >
                   Visite o site
-                </button>
-                <button className=" py-4 font-bold px-6 text-base shadow-lg dark:shadow-darkGray dark:shadow-lg dark:hover:shadow-none hover:shadow-none transition-shadow dark:text-white rounded-2xl dark:bg-transparent dark:border-solid dark:border-2 mt-10 dark:border-white border-solid border-2 border-black">
+                </a>
+                <a
+                  href="https://github.com/matheusdamiao/site_fotografo"
+                  target="_blank"
+                  className=" py-4 font-bold px-6 text-base shadow-md shadow-black dark:shadow-black dark:shadow-md dark:hover:shadow-none hover:shadow-none transition-shadow dark:text-white rounded-2xl dark:bg-transparent dark:border-solid dark:border-2 mt-10 dark:border-white border-solid border-2 border-black"
+                >
                   Código{" "}
-                </button>
+                </a>
               </div>
               <div>
                 <p className="pl-8 lg:pl-0 text-xs text-darkGray lg:w-4/5 dark:text-white lg:text-base pb-2">
@@ -214,12 +246,20 @@ const Projects = () => {
 
             <div className="w-full flex flex-col-reverse">
               <div className="flex xl:w-full lg:justify-start lg:gap-2 xl:gap-10 flex-nowrap xl:flex-wrap justify-center gap-5">
-                <button className="py-4 px-6 text-base dark:shadow-lg shadow-md shadow-darkGray dark:hover:shadow-none dark:border-none dark:shadow-darkGray hover:shadow-none transition-shadow dark:text-darkBlack text-white font-bold rounded-2xl bg-[#29201d] dark:bg-white dark:border-2 mt-10">
+                <a
+                  href="https://x-commerce-challenge.vercel.app/"
+                  target="_blank"
+                  className="py-4 px-6 text-base dark:shadow-md shadow-md shadow-black dark:hover:shadow-none dark:border-none dark:shadow-black hover:shadow-none transition-shadow dark:text-darkBlack text-white font-bold rounded-2xl bg-[#29201d] dark:bg-white dark:border-2 mt-10"
+                >
                   Visite o site
-                </button>
-                <button className=" py-4 font-bold px-6 text-base shadow-lg dark:shadow-darkGray dark:shadow-lg dark:hover:shadow-none hover:shadow-none transition-shadow dark:text-white rounded-2xl dark:bg-transparent dark:border-solid dark:border-2 mt-10 dark:border-white border-solid border-2 border-black">
+                </a>
+                <a
+                  href="https://github.com/matheusdamiao/x-commerce-challenge"
+                  target="_blank"
+                  className=" py-4 font-bold px-6 text-base shadow-md shadow-black dark:shadow-black dark:shadow-md dark:hover:shadow-none hover:shadow-none transition-shadow dark:text-white rounded-2xl dark:bg-transparent dark:border-solid dark:border-2 mt-10 dark:border-white border-solid border-2 border-black"
+                >
                   Código{" "}
-                </button>
+                </a>
               </div>
               <div>
                 <p className="pl-8 lg:pl-0 text-xs text-darkGray lg:w-4/5 dark:text-white lg:text-base pb-2">
