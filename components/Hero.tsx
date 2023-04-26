@@ -71,16 +71,16 @@ const Hero = () => {
           {/* </motion.div> */}
         </div>
       </div>
+
       <motion.svg
-        className="absolute bottom-14 md:bottom-0 left-[45%] "
-        width={100}
+        className="absolute bottom-14 md:bottom-0 left-[45%] w-full md:block hidden"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 4 }}
       >
         <motion.path
           d="M0 0 L30 32 L60 0"
-          className="fill-none stroke-darkGray stroke-[3px]"
+          className="fill-none stroke-darkGray stroke-[3px] "
           initial={{ y: 0, opacity: 1 }}
           animate={{ y: 50, opacity: [1, 0.5, 0] }}
           transition={{
@@ -95,7 +95,38 @@ const Hero = () => {
           className="fill-none stroke-darkOrange stroke-[3px]"
           initial={{ y: 0, opacity: 1 }}
           animate={{ y: 50, opacity: [1, 0.5, 0] }}
-          whileHover={{}}
+          transition={{
+            repeat: Infinity,
+            repeatType: "loop",
+            duration: 2,
+            delay: 2,
+          }}
+        />
+      </motion.svg>
+
+      <motion.svg
+        className="absolute bottom-24  left-4 w-full md:hidden block"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 4 }}
+      >
+        <motion.path
+          d="M35 0 L50 15 L65 0"
+          className="fill-none stroke-darkGray stroke-[3px] "
+          initial={{ y: 0, opacity: 1 }}
+          animate={{ y: 50, opacity: [1, 0.5, 0] }}
+          transition={{
+            repeat: Infinity,
+            repeatType: "loop",
+            duration: 2,
+            delay: 1,
+          }}
+        />
+        <motion.path
+          d="M35 0 L50 15 L65 0"
+          className="fill-none stroke-darkOrange stroke-[3px]"
+          initial={{ y: 0, opacity: 1 }}
+          animate={{ y: 50, opacity: [1, 0.5, 0] }}
           transition={{
             repeat: Infinity,
             repeatType: "loop",
