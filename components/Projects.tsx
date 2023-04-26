@@ -34,7 +34,7 @@ const Projects = () => {
           transition={{ type: "spring", delay: 0.5 }}
           className="flex flex-wrap flex-col mt-28 mb-30 md:mb-0 xl:mt-40"
         >
-          <h2 className="text-2xl font-semibold text-darkBlack dark:text-white lg:text-4xl pt-16 text-left pl-8 md:pl-24">
+          <h2 className="text-2xl font-semibold text-darkBlack dark:text-white lg:text-4xl pt-16 text-left pl-8 pr-1 md:pl-24">
             {" "}
             {translate("projects.project1.title")}{" "}
           </h2>
