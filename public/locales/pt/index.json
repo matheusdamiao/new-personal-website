@@ -1,7 +1,7 @@
 {"header": {
     "title": "Olá, meu nome é Matheus Damião. ",
     "subtitle": " Sou desenvolvedor web.",
-    "body": "Construo soluções web com design & tecnologias modernas", 
+    "body": "Construo websites rápidos e seguros com design & tecnologias modernas", 
     "button": "vamos trabalhar juntos"
 },
 "about": {
@@ -39,7 +39,7 @@
     "title": "Projetos",
     "project1": {
         "title":"Cupulille e Medeiros Advogadas",
-        "subtitle":"Site institucional + blog",
+        "subtitle":"Site institucional + blog [em construção]",
         "text":"Depois de um rebranding, construi o site institucional com a nova logotipo que, junto da paleta de cor monocromática, traz seriedade e leveza ao design. Possui também blog próprio e formulário de contato automatizado.",
         "techs":"Techs: GatsbyJS, NetlifyCMS, Sass, Netlify"
     },

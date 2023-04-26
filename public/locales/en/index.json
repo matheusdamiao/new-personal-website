@@ -1,7 +1,7 @@
 {"header": {
     "title": "Hi, my name is Matheus Damião. ",
     "subtitle": " I'm a web developer.",
-    "body": "I build web solutions with modern technology & design",
+    "body": "I build fast and secure websites with modern technology & design",
     "button": "let's work together"
 },
 "about": {
@@ -40,7 +40,7 @@
     "title": "Projects",
     "project1": {
         "title":"Cupulille e Medeiros Lawyers",
-        "subtitle":"Institutional website + blog",
+        "subtitle":"Institutional website + blog [work in progress]",
         "text":"After a rebranding, I built this institutional website with a new logo, which, alongside the new monochromatic pallete color, brings seriousness and lightness to design. It also has a blog and an automatic contact form to reach clients.",
         "techs":"Techs: GatsbyJS, NetlifyCMS, Sass, Netlify"
     },
