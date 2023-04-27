@@ -105,7 +105,7 @@ const Hero = () => {
       </motion.svg>
 
       <motion.svg
-        className="absolute bottom-[20vh] left-2 md:hidden block"
+        className="absolute bottom-[8vh] left-2 md:hidden block"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 4 }}
