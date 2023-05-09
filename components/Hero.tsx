@@ -21,7 +21,7 @@ const Hero = () => {
       </div> */}
       <div
         id="hero"
-        className="relative pl-10 pr-3 pt-0 w-full h-[80vh] md:h-screen flex-col flex items-start px-9 lg:px-44 justify-center bg-white dark:bg-lightBlack"
+        className="relative pl-10 pr-3 pt-0 w-full h-[100vh] md:h-screen flex-col flex items-start px-9 lg:px-44 justify-center bg-white dark:bg-lightBlack"
       >
         <div className="flex flex-col items-start z-10">
           <div className="flex flex-wrap gap-2">
@@ -29,7 +29,7 @@ const Hero = () => {
               initial={{ x: -200, opacity: 0, scale: 0 }}
               animate={{ x: 0, opacity: 1, scale: 1 }}
               transition={{ delay: 2 }}
-              className="text-xl md:text-xl text-lightOrange dark:text-lightOrange "
+              className="text-base md:text-xl text-lightOrange dark:text-lightOrange "
             >
               {translate("header.title")}
             </motion.div>
@@ -37,7 +37,7 @@ const Hero = () => {
               initial={{ x: -500, opacity: 0, scale: 0 }}
               animate={{ x: 0, opacity: 1, scale: 1 }}
               transition={{ delay: 2.5 }}
-              className="text-xl md:text-xl text-darkBlack dark:text-white "
+              className="text-base md:text-xl text-darkBlack dark:text-white "
             >
               {translate("header.subtitle")}
             </motion.div>
@@ -47,7 +47,7 @@ const Hero = () => {
             initial={{ x: -1500, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
             transition={{ delay: 3.2 }}
-            className="text-4xl sm:text-6xl leading-[3rem] md:leading-[4rem] font-regular text-darkBlack dark:text-white py-2 max-w-[1200px] pr-2 sm:pr-0 "
+            className="text-2xl sm:text-6xl leading-[2rem] md:leading-[4rem] font-regular text-darkBlack dark:text-white py-2 max-w-[1200px] pr-2 sm:pr-0 "
           >
             {translate("header.body")}
           </motion.div>
@@ -105,7 +105,7 @@ const Hero = () => {
       </motion.svg>
 
       <motion.svg
-        className="absolute bottom-[8vh] left-2 md:hidden block"
+        className="absolute bottom-[1vh] left-2 md:hidden block"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 4 }}
