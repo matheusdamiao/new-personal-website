@@ -247,7 +247,7 @@ const Projects = () => {
             <div className="w-full flex flex-col-reverse">
               <div className="flex xl:w-full lg:justify-start lg:gap-2 xl:gap-10 flex-nowrap xl:flex-wrap justify-center gap-5">
                 <a
-                  href="https://x-commerce-challenge.vercel.app/"
+                  href=""
                   target="_blank"
                   className="py-4 px-6 text-base dark:shadow-md shadow-md shadow-black dark:hover:shadow-none dark:border-none dark:shadow-black hover:shadow-none transition-shadow dark:text-darkBlack text-white font-bold rounded-2xl bg-[#29201d] dark:bg-white dark:border-2 mt-10"
                 >
