@@ -1,5 +1,5 @@
-import React from "react";
-import { motion } from "framer-motion";
+import React, { useRef } from "react";
+import { motion, useScroll, useTransform } from "framer-motion";
 import { useTranslation } from "react-i18next";
 import { Language } from "./Menu";
 import { useRouter } from "next/router";
@@ -7,6 +7,13 @@ import { useRouter } from "next/router";
 const Hero = () => {
   const { t: translate } = useTranslation("index");
   const { locale, locales } = useRouter();
+
+  const ref = useRef(null);
+
+  const { scrollYProgress, scrollY } = useScroll({
+    target: ref,
+  });
+  const y = useTransform(scrollY, [0, 900], ["0%", "100%"]);
 
   return (
     <>
@@ -23,7 +30,7 @@ const Hero = () => {
         id="hero"
         className="relative pl-10 pr-3 pt-0 w-full h-[100vh] md:h-screen flex-col flex items-start px-9 lg:px-44 justify-center bg-white dark:bg-lightBlack"
       >
-        <div className="flex flex-col items-start z-10">
+        <div className="flex flex-col items-start z-10" ref={ref}>
           <div className="flex flex-wrap gap-2">
             <motion.div
               initial={{ x: -200, opacity: 0, scale: 0 }}
@@ -44,9 +51,10 @@ const Hero = () => {
           </div>
 
           <motion.div
-            initial={{ x: -1500, opacity: 0 }}
-            animate={{ x: 0, opacity: 1 }}
+            // initial={{ x: -1500, opacity: 0 }}
+            // animate={{ x: 0, opacity: 1 }}
             transition={{ delay: 3.2 }}
+            style={{ y }}
             className="text-2xl sm:text-6xl leading-[2rem] md:leading-[4rem] font-regular text-darkBlack dark:text-white py-2 max-w-[1200px] pr-2 sm:pr-0 "
           >
             {translate("header.body")}

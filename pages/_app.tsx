@@ -34,11 +34,11 @@ function MyApp({ Component, pageProps }: AppProps) {
         <title>Matheus Damião - Web Developer</title>
       </Head>
       <Script
-        strategy="afterInteractive"
+        strategy="lazyOnload"
         src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}
       />
 
-      <Script strategy="afterInteractive">
+      <Script id="gtag-init" strategy="lazyOnload">
         {`
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
@@ -48,6 +48,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         });
     `}
       </Script>
+
       <ThemeProvider attribute="class">
         <Component {...pageProps} />
       </ThemeProvider>

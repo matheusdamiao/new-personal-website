@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import { useTranslation } from "react-i18next";
 import advogadas from "./../assets/images/advogadas.svg";
 import dashboard from "./../assets/images/dashboard.svg";
@@ -6,10 +6,18 @@ import pedroadv from "./../assets/images/pedroadvnewsha.svg";
 import patriciaDesigner from "./../assets/images/patricia-designer.svg";
 import pedrofoto from "./../assets/images/pedro-fotografia.svg";
 import Image from "next/image";
-import { motion } from "framer-motion";
+import { motion, useScroll, useTransform } from "framer-motion";
 
 const Projects = () => {
   const { t: translate } = useTranslation("index");
+
+  const ref = useRef(null);
+  const { scrollYProgress } = useScroll({
+    target: ref,
+    offset: ["end end", "end start"],
+  });
+  const y = useTransform(scrollYProgress, [0, 1], ["0%", "100%"]);
+  const opacity = useTransform(scrollYProgress, [0, 1], ["100%", "0%"]);
 
   return (
     <div
@@ -27,13 +35,8 @@ const Projects = () => {
         </h2>
       </motion.div>
 
-      <div className="flex flex-col flex-wrap w-full">
-        <motion.div
-          initial={{ x: -100, opacity: 0 }}
-          whileInView={{ x: 0, opacity: 1 }}
-          transition={{ type: "spring", delay: 0.5 }}
-          className="flex flex-wrap flex-col mt-28 mb-30 md:mb-0 xl:mt-40"
-        >
+      <div className="flex flex-col flex-wrap w-full" ref={ref}>
+        <motion.div className="flex flex-wrap flex-col mt-28 mb-30 md:mb-0 xl:mt-40">
           <h2 className="text-2xl font-semibold text-darkBlack dark:text-white lg:text-4xl pt-16 text-left pl-8 pr-1 md:pl-24">
             {" "}
             {translate("projects.project1.title")}{" "}
@@ -44,9 +47,13 @@ const Projects = () => {
           </h3>
 
           <div className="flex flex-wrap lg:flex-nowrap items-center justify-center">
-            <div className="pt-12 shrink-1 flex lg:flex-none">
+            <motion.div
+              style={{ y, opacity }}
+              // transition={{ type: "spring" }}
+              className="pt-12 shrink-1 flex lg:flex-none"
+            >
               <Image className="w-full" src={advogadas} alt="" />
-            </div>
+            </motion.div>
 
             <div className="w-full flex flex-col-reverse">
               <div className="flex xl:w-full lg:justify-start lg:gap-2 xl:gap-10 flex-nowrap xl:flex-wrap justify-center gap-5">
@@ -78,10 +85,11 @@ const Projects = () => {
         </motion.div>
 
         <motion.div
-          initial={{ x: -100, opacity: 0 }}
-          whileInView={{ x: 0, opacity: 1 }}
-          transition={{ type: "spring", delay: 0.5 }}
+          // initial={{ x: -100, opacity: 0 }}
+          // whileInView={{ x: 0, opacity: 1 }}
+          // transition={{ type: "spring", delay: 0.5 }}
           className="flex flex-wrap flex-col mt-28 mb-30 md:mb-0 xl:mt-40"
+          ref={ref}
         >
           <h2 className="text-2xl font-semibold text-darkBlack dark:text-white lg:text-4xl pt-16 text-left pl-8 md:pl-24">
             {" "}
@@ -93,9 +101,12 @@ const Projects = () => {
           </h3>
 
           <div className="flex flex-wrap lg:flex-nowrap items-center justify-center">
-            <div className="pt-12 shrink-1 flex lg:flex-none">
+            <motion.div
+              style={{ y, opacity }}
+              className="pt-12 shrink-1 flex lg:flex-none"
+            >
               <Image className="w-full" src={pedroadv} alt="" />
-            </div>
+            </motion.div>
 
             <div className="w-full flex flex-col-reverse">
               <div className="flex xl:w-full lg:justify-start lg:gap-2 xl:gap-10 flex-nowrap xl:flex-wrap justify-center gap-5">
