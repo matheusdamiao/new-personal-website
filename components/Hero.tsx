@@ -51,8 +51,8 @@ const Hero = () => {
           </div>
 
           <motion.div
-            // initial={{ x: -1500, opacity: 0 }}
-            // animate={{ x: 0, opacity: 1 }}
+            initial={{ x: -1500, opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
             transition={{ delay: 3.2 }}
             style={{ y }}
             className="text-2xl sm:text-6xl leading-[2rem] md:leading-[4rem] font-regular text-darkBlack dark:text-white py-2 max-w-[1200px] pr-2 sm:pr-0 "
