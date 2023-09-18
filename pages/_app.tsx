@@ -5,8 +5,14 @@ import { ThemeProvider } from "next-themes";
 import Head from "next/head";
 import Script from "next/script";
 import Link from "next/link";
+import { useEffect } from "react";
+import Hotjar from "@hotjar/browser";
 
 function MyApp({ Component, pageProps }: AppProps) {
+  useEffect(() => {
+    Hotjar.init(3659437, 6);
+  }, []);
+
   return (
     <>
       <Head>
@@ -33,6 +39,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         <meta name="theme-color" content="#ffffff" />
         <title>Matheus Damião - Web Developer</title>
       </Head>
+
       <Script
         strategy="afterInteractive"
         src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}
