@@ -16,6 +16,14 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
       <Head>
+        <meta
+          name="adopt-website-id"
+          content="61e20aa6-9558-40ab-aaaa-7141d96d8ea1"
+        />
+        <script
+          src="//tag.goadopt.io/injector.js?website_code=61e20aa6-9558-40ab-aaaa-7141d96d8ea1"
+          className="adopt-injector"
+        ></script>
         <link
           rel="apple-touch-icon"
           sizes="180x180"
