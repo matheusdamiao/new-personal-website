@@ -15,7 +15,7 @@ export const MenuToggle = ({ toggle }) => {
   const { theme } = useTheme();
 
   return (
-    <button className="absolute top-7 right-4 z-20" onClick={toggle}>
+    <button className="absolute top-5 right-4 z-20" onClick={toggle}>
       <svg width="23" height="23" viewBox="0 0 23 23">
         <Path
           stroke={theme === "dark" ? "hsl(17, 51%, 61%)" : "black"}

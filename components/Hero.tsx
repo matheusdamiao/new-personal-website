@@ -28,7 +28,7 @@ const Hero = () => {
       </div> */}
       <div
         id="hero"
-        className="relative pl-10 pr-3 pt-0 w-full h-[100vh] md:h-screen flex-col flex items-start px-9 lg:px-44 justify-center bg-white dark:bg-lightBlack"
+        className="relative pt-0 w-full h-[100vh] md:h-screen flex-col flex items-start px-9 lg:px-44 justify-center bg-white dark:bg-lightBlack"
       >
         <div className="flex flex-col items-start z-10" ref={ref}>
           <div className="flex flex-wrap gap-2">
@@ -112,7 +112,7 @@ const Hero = () => {
         />
       </motion.svg>
 
-      <motion.svg
+      {/* <motion.svg
         className="absolute bottom-[1vh] left-2 md:hidden block"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
@@ -142,7 +142,7 @@ const Hero = () => {
             delay: 2,
           }}
         />
-      </motion.svg>
+      </motion.svg> */}
     </>
   );
 };
