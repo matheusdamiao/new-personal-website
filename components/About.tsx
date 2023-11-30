@@ -11,7 +11,7 @@ const About = () => {
   return (
     <div
       id="about"
-      className="flex flex-col w-full md:h-full lg:h-full items-center md:px-44 px-9 py-40 dark:bg-darkBlack bg-white "
+      className="flex flex-col w-full md:h-full lg:h-full items-center md:px-44 px-9 py-40 dark:bg-darkBlack gap-10 bg-white "
     >
       <motion.div
         initial={{ x: -100, opacity: 0 }}
@@ -39,9 +39,9 @@ const About = () => {
             </button>
           </p>
         </div>
-        <div className=" md:max-w-[250px]">
+        {/* <div className=" md:max-w-[250px]">
           <Image src={avatar} alt="" className="md:w-full w-32" />
-        </div>
+        </div> */}
       </motion.div>
       <motion.div
         initial={{ x: -100, opacity: 0 }}
