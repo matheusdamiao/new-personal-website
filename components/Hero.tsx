@@ -29,7 +29,10 @@ const Hero = () => {
   const opacity = useTransform(scrollY, [0, 500], [1, 0]);
 
   const title = translate("header.title");
-  modifyTitleColor(title);
+
+  useEffect(() => {
+    modifyTitleColor(title);
+  }, [title]);
 
   function modifyTitleColor(phrase) {
     var words = phrase.split(" ");
