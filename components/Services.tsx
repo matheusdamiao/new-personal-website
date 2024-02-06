@@ -3,8 +3,11 @@ import React from "react";
 import { useTranslation } from "react-i18next";
 import blog from "./../assets/icons/blog.svg";
 import browser from "./../assets/icons/browser-www.svg";
-import phone from "./../assets/icons/cellphone.svg";
-import cloud from "./../assets/icons/cloud.svg";
+import deskIcon from "./../assets/icons/desktop-icon.gif";
+import pencilIcon from "./../assets/icons/pencil-icon.gif";
+
+import phone from "./../assets/icons/ebook-icon.gif";
+import cloud from "./../assets/icons/api-icon.gif";
 import { motion } from "framer-motion";
 
 const Services = () => {
@@ -16,14 +19,15 @@ const Services = () => {
       className="flex flex-col md:px-44 px-9 py-40 dark:bg-darkBlack bg-white xl:h-full md:h-full"
     >
       <motion.div
-        initial={{ x: -100, opacity: 0 }}
-        whileInView={{ x: 0, opacity: 1 }}
+        initial={{ y: -100, opacity: 0 }}
+        whileInView={{ y: 0, opacity: 1 }}
         transition={{ type: "spring" }}
-        className="flex justify-start items-center gap-3 w-full "
+        className="flex justify-start items-center gap-3 w-full flex-col"
       >
-        <h2 className="font-Source text-4xl md:text-7xl dark:text-white; transform hover:text-darkOrange hover:translate-x-2 transition duration-300">
+        <h2 className="font-Source text-3xl md:text-5xl dark:text-white; transform hover:text-darkOrange hover:translate-x-2 transition duration-300">
           {translate("services.title")}
         </h2>
+        <h3>{translate("services.subtitle")}</h3>
       </motion.div>
 
       <div className="flex flex-wrap w-4/5 justify-between items-center mt-16 md:mt-20 gap-20 md:gap-15">
@@ -33,18 +37,18 @@ const Services = () => {
           transition={{ delay: 0.2 }}
           className="flex flex-col gap-4 md:gap-5 max-w-md"
         >
-          <Image src={browser} alt="" />
+          <Image src={deskIcon} alt="" className="w-[100px]" />
           <motion.div
-            initial={{ x: -100, opacity: 0 }}
-            whileInView={{ x: 0, opacity: 1 }}
+            initial={{ y: -100, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
             transition={{ type: "spring" }}
-            className="text-darkBlack font-semibold text-lg md:text-2xl dark:text-white"
+            className="text-darkBlack font-semibold text-lg md:text-xl dark:text-white"
           >
             {translate("services.topic1.title")}
           </motion.div>
           <motion.div
-            initial={{ x: -100, opacity: 0 }}
-            whileInView={{ x: 0, opacity: 1 }}
+            initial={{ y: -100, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
             transition={{ type: "spring" }}
             className="text-darkGray dark:text-lightGray"
           >
@@ -58,18 +62,18 @@ const Services = () => {
           transition={{ delay: 0.3 }}
           className="flex flex-col gap-4 md:gap-5 max-w-sm"
         >
-          <Image src={blog} alt="" />
+          <Image src={pencilIcon} alt="" className="w-[100px]" />
           <motion.div
-            initial={{ x: -100, opacity: 0 }}
-            whileInView={{ x: 0, opacity: 1 }}
+            initial={{ y: -100, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
             transition={{ type: "spring" }}
-            className="text-darkBlack font-semibold text-lg md:text-2xl dark:text-white"
+            className="text-darkBlack font-semibold text-lg md:text-xl dark:text-white"
           >
             {translate("services.topic2.title")}
           </motion.div>
           <motion.div
-            initial={{ x: -100, opacity: 0 }}
-            whileInView={{ x: 0, opacity: 1 }}
+            initial={{ y: -100, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
             transition={{ type: "spring" }}
             className="text-darkGray dark:text-lightGray"
           >
@@ -83,18 +87,18 @@ const Services = () => {
           transition={{ delay: 0.4 }}
           className="flex flex-col gap-4 md:gap-5 max-w-sm"
         >
-          <Image src={phone} alt="" />
+          <Image src={phone} alt="" className="w-[100px]" />
           <motion.div
-            initial={{ x: -100, opacity: 0 }}
-            whileInView={{ x: 0, opacity: 1 }}
+            initial={{ y: -100, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
             transition={{ type: "spring" }}
-            className="text-darkBlack font-semibold text-lg md:text-2xl dark:text-white"
+            className="text-darkBlack font-semibold text-lg md:text-xl dark:text-white"
           >
             {translate("services.topic3.title")}
           </motion.div>
           <motion.div
-            initial={{ x: -100, opacity: 0 }}
-            whileInView={{ x: 0, opacity: 1 }}
+            initial={{ y: -100, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
             transition={{ type: "spring" }}
             className="text-darkGray dark:text-lightGray"
           >
@@ -108,18 +112,18 @@ const Services = () => {
           transition={{ delay: 0.5 }}
           className="flex flex-col gap-4 md:gap-5 max-w-sm"
         >
-          <Image src={cloud} alt="" />
+          <Image src={cloud} alt="" className="w-[100px]" />
           <motion.div
-            initial={{ x: -100, opacity: 0 }}
-            whileInView={{ x: 0, opacity: 1 }}
+            initial={{ y: -100, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
             transition={{ type: "spring" }}
-            className="text-darkBlack font-semibold text-lg md:text-2xl dark:text-white"
+            className="text-darkBlack font-semibold text-lg md:text-xl dark:text-white"
           >
             {translate("services.topic4.title")}
           </motion.div>
           <motion.div
-            initial={{ x: -100, opacity: 0 }}
-            whileInView={{ x: 0, opacity: 1 }}
+            initial={{ y: -100, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
             transition={{ type: "spring" }}
             className="text-darkGray dark:text-lightGray"
           >

@@ -43,12 +43,7 @@ const Menu = ({ locales }: Language) => {
 
   return (
     <>
-      <motion.div
-        initial={{ x: -2000 }}
-        animate={{ x: 0 }}
-        transition={{ delay: 1 }}
-        className="flex items-center z-20 justify-between w-full px-10 py-3 fixed bg-white dark:bg-lightBlack bg-opacity-50 backdrop-blur-sm dark:bg-opacity-50"
-      >
+      <div className="flex items-center z-20 justify-between w-full px-10 py-3 fixed bg-white dark:bg-lightBlack bg-opacity-50 backdrop-blur-sm dark:bg-opacity-50">
         <Image alt="" src={theme === "dark" ? logo : logoWhite} width={50} />
         <div className="">
           <ul className="hidden lg:flex justify-evenly items-center gap-12 dark:text-lightGray text-lightGray">
@@ -161,7 +156,7 @@ const Menu = ({ locales }: Language) => {
 
           <ToggleTheme />
         </div>
-      </motion.div>
+      </div>
     </>
   );
 };

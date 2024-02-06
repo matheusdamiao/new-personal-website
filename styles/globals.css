@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -8,11 +9,24 @@
 
 @layer base {
     html {
-      font-family: 'Source Code Pro', 'monospace';
+      /* font-family: 'Source Code Pro', 'monospace'; */
       scroll-behavior: smooth;
       overflow-x: hidden;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;;
     }
     h1{
       font-family: 'Share Tech Mono', 'monospace';
     }
+
+
+
+    #corrente-hero > span {
+      --tw-text-opacity: 0.2  ;
+      color: rgb(156 163 175 / var(--tw-text-opacity));
+    }
   }
+
+

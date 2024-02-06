@@ -60,8 +60,8 @@ const Form = () => {
         className="flex flex-col w-full md:h-full lg:h-full items-start md:px-44 px-9 pb-40 pt-20 dark:bg-darkBlack bg-white "
       >
         <motion.div
-          initial={{ x: -100, opacity: 0 }}
-          whileInView={{ x: 0, opacity: 1 }}
+          initial={{ y: -100, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
           transition={{ type: "spring" }}
           className="flex justify-start items-center gap-3 w-full"
         >
@@ -70,16 +70,16 @@ const Form = () => {
           </h2>
         </motion.div>
         <motion.p
-          initial={{ x: -100, opacity: 0 }}
-          whileInView={{ x: 0, opacity: 1 }}
+          initial={{ y: -100, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
           transition={{ type: "spring" }}
           className="w-full lg:mt-16 mt-20"
         >
           {translate("contact.text")}
         </motion.p>
         <motion.form
-          initial={{ x: -100, opacity: 0 }}
-          whileInView={{ x: 0, opacity: 1 }}
+          initial={{ y: -100, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
           transition={{ type: "spring" }}
           method="POST"
           className="flex flex-col items-start gap-2 lg:pt-16 pt-10 max-w-xs w-full"

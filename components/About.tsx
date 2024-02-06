@@ -1,8 +1,9 @@
 import Image from "next/image";
 import React, { useState } from "react";
-import avatar from "./../assets/images/avatar.svg";
+import avatar from "./../assets/images/foto-nova-matheus.png";
 import { useTranslation } from "react-i18next";
 import { motion } from "framer-motion";
+import { useRouter } from "next/router";
 
 const About = () => {
   const [readMore, setReadMore] = useState(false);
@@ -14,8 +15,8 @@ const About = () => {
       className="flex flex-col w-full md:h-full lg:h-full items-center md:px-44 px-9 py-40 dark:bg-darkBlack gap-10 bg-white "
     >
       <motion.div
-        initial={{ x: -100, opacity: 0 }}
-        whileInView={{ x: 0, opacity: 1 }}
+        initial={{ y: -100, opacity: 0 }}
+        whileInView={{ y: 0, opacity: 1 }}
         transition={{ type: "spring" }}
         className="flex justify-start items-center gap-3 w-full"
       >
@@ -24,28 +25,31 @@ const About = () => {
         </h2>
       </motion.div>
       <motion.div
-        initial={{ x: -100, opacity: 0 }}
-        whileInView={{ x: 0, opacity: 1 }}
+        initial={{ y: -100, opacity: 0 }}
+        whileInView={{ y: 0, opacity: 1 }}
         transition={{ type: "spring" }}
         className="flex pt-[40px] w-full gap-8 justify-center lg:justify-start lg:gap-22 xl:gap-52 flex-wrap-reverse lg:flex-nowrap"
       >
-        <div className="flex justify-center">
+        <div className="flex flex-col justify-start items-start ">
           <p className="font-Source max-w-[900px] text-sm md:text-lg leading-[32px] md:leading-[32px] text-lightBlack dark:text-white">
             {translate("about.body")}
             {readMore && <span>{translate("about.moreBody")}</span>}
-            <button onClick={() => setReadMore(!readMore)}>
-              {" "}
-              {readMore ? "hide" : "read more"}
-            </button>
           </p>
+          <button
+            onClick={() => setReadMore(!readMore)}
+            className="pt-4 text-gray-500"
+          >
+            {" "}
+            {readMore ? "esconder" : "ler mais"}
+          </button>
         </div>
-        {/* <div className=" md:max-w-[250px]">
-          <Image src={avatar} alt="" className="md:w-full w-32" />
-        </div> */}
+        <div className=" md:max-w-[450px]">
+          <Image src={avatar} alt="" className="md:w-full w-full" />
+        </div>
       </motion.div>
       <motion.div
-        initial={{ x: -100, opacity: 0 }}
-        whileInView={{ x: 0, opacity: 1 }}
+        initial={{ y: -100, opacity: 0 }}
+        whileInView={{ y: 0, opacity: 1 }}
         transition={{ type: "spring" }}
         className="flex flex-col w-full"
       >

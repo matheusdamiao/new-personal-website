@@ -6,6 +6,10 @@ import pedroadv from "./../assets/images/pedroadvnewsha.svg";
 import patriciaDesigner from "./../assets/images/patricia-designer.svg";
 import pedrofoto from "./../assets/images/pedro-fotografia.svg";
 import Image from "next/image";
+import rocket from "./../assets/icons/rocket-icon.gif";
+import link from "./../assets/icons/share-icon.gif";
+import code from "./../assets/icons/code-icon.gif";
+
 import { motion, useScroll, useTransform } from "framer-motion";
 
 const Projects = () => {
@@ -25,264 +29,494 @@ const Projects = () => {
       className="flex flex-col flex-wrap w-full md:h-full lg:h-full items-center py-40 dark:bg-lightBlack bg-white"
     >
       <motion.div
-        initial={{ x: -100, opacity: 0 }}
-        whileInView={{ x: 0, opacity: 1 }}
+        initial={{ y: -100, opacity: 0 }}
+        whileInView={{ y: 0, opacity: 1 }}
         transition={{ type: "spring" }}
-        className=" flex justify-start items-end gap-1 w-full px-9 lg:px-44"
+        className=" flex px-9 items-center justify-center  lg:px-44 flex-wrap lg:flex-nowrap lg:gap-10"
       >
-        <h2 className="font-Source text-5xl md:text-7xl tracking-[6.5%] transform hover:text-darkOrange hover:translate-x-2 transition duration-300">
+        <h2 className="flex font-Source text-center text-3xl gap-4 md:text-5xl tracking-[6.5%] transform hover:text-darkOrange hover:translate-x-2 transition duration-300">
           {translate("projects.title")}
         </h2>
+        <motion.img
+          src={rocket.src}
+          alt=""
+          className="w-[80px]"
+          whileHover={{
+            scale: 1.2,
+
+            transition: { type: "spring", duration: 0.5 },
+          }}
+        />
       </motion.div>
 
+      {/* PROJETO 1 */}
+      {/* /////////////////////// */}
       <div className="flex flex-col flex-wrap w-full" ref={ref}>
-        <motion.div className="flex flex-wrap flex-col mt-28 mb-30 md:mb-0 xl:mt-40">
-          <h2 className="text-2xl font-semibold text-darkBlack dark:text-white lg:text-4xl pt-16 text-left pl-8 pr-1 md:pl-24">
+        <div className="flex flex-wrap flex-col mt-14 mb-30 md:mb-0 xl:mt-32">
+          <h2 className="text-2xl text-center font-semibold text-darkBlack dark:text-white lg:text-2xl pt-16 ">
             {" "}
             {translate("projects.project1.title")}{" "}
           </h2>
-          <h3 className="text-sm pt-2 text-lightGray dark:text-lightGray lg:text-lg text-left pl-8 md:pl-24">
+          <h3 className="text-sm pt-2 text-center text-lightGray dark:text-lightGray lg:text-base ">
             {" "}
             {translate("projects.project1.subtitle")}
           </h3>
 
           <div className="flex flex-wrap lg:flex-nowrap items-center justify-center">
-            <motion.div
-              style={{ y, opacity }}
-              // transition={{ type: "spring" }}
-              className="pt-12 shrink-1 flex lg:flex-none"
-            >
-              <Image className="w-full" src={advogadas} alt="" />
-            </motion.div>
+            <div className="pt-12 shrink-1  lg:flex-none">
+              <div className="w-[700px] hidden md:block">
+                <div>
+                  <div className="relative mx-auto border-gray-900 dark:border-gray-900 bg-gray-900 border-[8px] rounded-t-xl h-[172px] max-w-[301px] md:h-[294px] md:max-w-[512px]">
+                    <div className="rounded-lg overflow-hidden h-[156px] md:h-[278px] bg-white dark:bg-gray-800">
+                      <video
+                        src="videos/club-video-desktop.mp4"
+                        muted
+                        controls
+                        loop
+                        autoPlay
+                        className="h-[156px] md:h-[278px] w-full rounded-xl"
+                      ></video>
+                    </div>
+                  </div>
+                  <div className="relative mx-auto bg-gray-900 dark:bg-gray-900 rounded-b-xl rounded-t-sm h-[17px] max-w-[351px] md:h-[21px] md:max-w-[597px]">
+                    <div className="absolute left-1/2 top-0 -translate-x-1/2 rounded-b-xl w-[56px] h-[5px] md:w-[96px] md:h-[8px] bg-gray-800"></div>
+                  </div>
+                </div>
+              </div>
 
-            <div className="w-full flex flex-col-reverse">
-              <div className="flex xl:w-full lg:justify-start lg:gap-2 xl:gap-10 flex-nowrap xl:flex-wrap justify-center gap-5">
+              <div className="md:hidden block">
+                <div className="flex-0 relative mx-auto border-gray-800 dark:border-gray-900 bg-gray-800 border-[14px] rounded-[2.5rem] h-[600px] w-[300px] shadow-xl">
+                  <div className="w-[148px] h-[18px] bg-slate-600 top-0 rounded-b-[1rem] left-1/2 -translate-x-1/2 absolute"></div>
+                  <div className="h-[46px] w-[3px] bg-gray-800 absolute -start-[17px] top-[124px] rounded-s-lg"></div>
+                  <div className="h-[46px] w-[3px] bg-gray-800 absolute -start-[17px] top-[178px] rounded-s-lg"></div>
+                  <div className="h-[64px] w-[3px] bg-gray-800 absolute -end-[17px] top-[142px] rounded-e-lg"></div>
+                  <div className="rounded-[2rem] overflow-hidden w-[272px] h-[572px] bg-gray-800 dark:bg-gray-900">
+                    <video
+                      src="/videos/club-video-mobile.mp4"
+                      muted
+                      loop
+                      autoPlay
+                      className="block w-[272px] h-[572px] opacity-8"
+                    ></video>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="w-full flex flex-col-reverse max-w-lg px-8">
+              <div className="flex gap-4 pt-4 justify-center lg:justify-start">
                 <a
-                  href="https://cupulilleemedeirosadvocacia.netlify.app/"
+                  className="flex gap-2 items-center text-gray-400"
+                  href="https://clubtransatlantico.com.br/"
                   target="_blank"
-                  className="py-4 px-6 text-base dark:shadow-md shadow-md shadow-black dark:hover:shadow-none dark:border-none dark:shadow-black hover:shadow-none transition-shadow dark:text-darkBlack text-white font-bold rounded-2xl bg-[#29201d] dark:bg-white dark:border-2 mt-10"
                 >
-                  Visite o site
+                  <img
+                    src={link.src}
+                    className="w-[30px] h-[30px] cursor-pointer"
+                    alt=""
+                  />
+                  Link
                 </a>
+
                 <a
-                  href="https://github.com/matheusdamiao/gatsby-blog"
+                  className="flex gap-2 items-center text-gray-400"
+                  href="https://github.com/matheusdamiao/club-transatlantico"
                   target="_blank"
-                  className=" py-4 font-bold px-6 text-base shadow-md shadow-black dark:shadow-black dark:shadow-md dark:hover:shadow-none hover:shadow-none transition-shadow dark:text-white rounded-2xl dark:bg-transparent dark:border-solid dark:border-2 mt-10 dark:border-white border-solid border-2 border-black"
                 >
-                  Código{" "}
+                  <img
+                    src={code.src}
+                    className="w-[30px] h-[30px] cursor-pointer"
+                    alt=""
+                  />
+                  Código
                 </a>
               </div>
-              <div>
-                <p className="pl-8 lg:pl-0 text-xs text-darkGray lg:w-4/5 dark:text-white lg:text-base pb-2">
+              <div className="pt-10 max-w-3xl m-auto">
+                <p className=" text-sm text-darkGray lg:w-full dark:text-white lg:text-base pb-2">
                   {translate("projects.project1.text")}
                 </p>
-                <h4 className="pl-8 lg:pl-0 text-sm text-lightGray pt-4 lg:text-sm hover:text-lightOrange duration-500">
+                <h4 className=" text-sm text-lightGray pt-4 lg:text-sm text-center lg:text-left hover:text-lightOrange duration-500">
                   {translate("projects.project1.techs")}
                 </h4>
               </div>
             </div>
           </div>
-        </motion.div>
+        </div>
 
-        <motion.div
-          // initial={{ x: -100, opacity: 0 }}
-          // whileInView={{ x: 0, opacity: 1 }}
-          // transition={{ type: "spring", delay: 0.5 }}
-          className="flex flex-wrap flex-col mt-28 mb-30 md:mb-0 xl:mt-40"
-          ref={ref}
-        >
-          <h2 className="text-2xl font-semibold text-darkBlack dark:text-white lg:text-4xl pt-16 text-left pl-8 md:pl-24">
-            {" "}
-            {translate("projects.project3.title")}{" "}
-          </h2>
-          <h3 className="text-sm pt-2 text-lightGray dark:text-lightGray lg:text-lg text-left pl-8 md:pl-24">
-            {" "}
-            {translate("projects.project3.subtitle")}
-          </h3>
+        {/* PROJETO 2 */}
+        {/* /////////////////////// */}
 
-          <div className="flex flex-wrap lg:flex-nowrap items-center justify-center">
-            <motion.div
-              style={{ y, opacity }}
-              className="pt-12 shrink-1 flex lg:flex-none"
-            >
-              <Image className="w-full" src={pedroadv} alt="" />
-            </motion.div>
-
-            <div className="w-full flex flex-col-reverse">
-              <div className="flex xl:w-full lg:justify-start lg:gap-2 xl:gap-10 flex-nowrap xl:flex-wrap justify-center gap-5">
-                <a
-                  href="https://site-advogado-template.netlify.app/"
-                  target="_blank"
-                  className="py-4 px-6 text-base dark:shadow-md shadow-md shadow-black dark:hover:shadow-none dark:border-none dark:shadow-black hover:shadow-none transition-shadow dark:text-darkBlack text-white font-bold rounded-2xl bg-[#29201d] dark:bg-white dark:border-2 mt-10"
-                >
-                  Visite o site
-                </a>
-                <a
-                  href="https://github.com/matheusdamiao/template-lawyer-site"
-                  target="_blank"
-                  className=" py-4 font-bold px-6 text-base shadow-md shadow-black dark:shadow-black dark:shadow-md dark:hover:shadow-none hover:shadow-none transition-shadow dark:text-white rounded-2xl dark:bg-transparent dark:border-solid dark:border-2 mt-10 dark:border-white border-solid border-2 border-black"
-                >
-                  Código{" "}
-                </a>
-              </div>
-              <div>
-                <p className="pl-8 lg:pl-0 text-xs text-darkGray lg:w-4/5 dark:text-white lg:text-base pb-2">
-                  {translate("projects.project3.text")}
-                </p>
-                <h4 className="pl-8 lg:pl-0 text-sm text-lightGray pt-4 lg:text-sm hover:text-lightOrange duration-500">
-                  {translate("projects.project3.techs")}
-                </h4>
-              </div>
-            </div>
-          </div>
-        </motion.div>
-
-        <motion.div
-          initial={{ x: -100, opacity: 0 }}
-          whileInView={{ x: 0, opacity: 1 }}
-          transition={{ type: "spring", delay: 0.5 }}
-          className="flex flex-wrap flex-col mt-28 mb-30 md:mb-0 xl:mt-40"
-        >
-          <h2 className="text-2xl font-semibold text-darkBlack dark:text-white lg:text-4xl pt-16 text-left pl-8 md:pl-24">
-            {" "}
-            {translate("projects.project4.title")}{" "}
-          </h2>
-          <h3 className="text-sm pt-2 text-lightGray dark:text-lightGray lg:text-lg text-left pl-8 md:pl-24">
-            {" "}
-            {translate("projects.project4.subtitle")}
-          </h3>
-
-          <div className="flex flex-wrap lg:flex-nowrap items-center justify-center">
-            <div className="pt-12 shrink-1 flex lg:flex-none">
-              <Image className="w-full" src={patriciaDesigner} alt="" />
-            </div>
-
-            <div className="w-full flex flex-col-reverse">
-              <div className="flex xl:w-full lg:justify-start lg:gap-2 xl:gap-10 flex-nowrap xl:flex-wrap justify-center gap-5">
-                <a
-                  href="https://master--zippy-cascaron-772f17.netlify.app/"
-                  target="_blank"
-                  className="py-4 px-6 text-base dark:shadow-md shadow-md shadow-black dark:hover:shadow-none dark:border-none dark:shadow-black hover:shadow-none transition-shadow dark:text-darkBlack text-white font-bold rounded-2xl bg-[#29201d] dark:bg-white dark:border-2 mt-10"
-                >
-                  Visite o site
-                </a>
-                <a
-                  href="https://github.com/matheusdamiao/portfolio-graphic-designer"
-                  target="_blank"
-                  className=" py-4 font-bold px-6 text-base shadow-md shadow-black dark:shadow-black dark:shadow-md dark:hover:shadow-none hover:shadow-none transition-shadow dark:text-white rounded-2xl dark:bg-transparent dark:border-solid dark:border-2 mt-10 dark:border-white border-solid border-2 border-black"
-                >
-                  Código{" "}
-                </a>
-              </div>
-              <div>
-                <p className="pl-8 lg:pl-0 text-xs text-darkGray lg:w-4/5 dark:text-white lg:text-base pb-2">
-                  {translate("projects.project4.text")}
-                </p>
-                <h4 className="pl-8 lg:pl-0 text-sm text-lightGray pt-4 lg:text-sm hover:text-lightOrange duration-500">
-                  {translate("projects.project4.techs")}
-                </h4>
-              </div>
-            </div>
-          </div>
-        </motion.div>
-
-        <motion.div
-          initial={{ x: -100, opacity: 0 }}
-          whileInView={{ x: 0, opacity: 1 }}
-          transition={{ type: "spring", delay: 0.5 }}
-          className="flex flex-wrap flex-col mt-28 mb-30 md:mb-0 xl:mt-40"
-        >
-          <h2 className="text-2xl font-semibold text-darkBlack dark:text-white lg:text-4xl pt-16 text-left pl-8 md:pl-24">
-            {" "}
-            {translate("projects.project5.title")}{" "}
-          </h2>
-          <h3 className="text-sm pt-2 text-lightGray dark:text-lightGray lg:text-lg text-left pl-8 md:pl-24">
-            {" "}
-            {translate("projects.project5.subtitle")}
-          </h3>
-
-          <div className="flex flex-wrap lg:flex-nowrap items-center justify-center">
-            <div className="pt-12 shrink-1 flex lg:flex-none">
-              <Image className="w-full" src={pedrofoto} alt="" />
-            </div>
-
-            <div className="w-full flex flex-col-reverse">
-              <div className="flex xl:w-full lg:justify-start lg:gap-2 xl:gap-10 flex-nowrap xl:flex-wrap justify-center gap-5">
-                <a
-                  href="https://matheusdamiao.github.io/site_fotografo"
-                  target="_blank"
-                  className="py-4 px-6 text-base dark:shadow-md shadow-md shadow-black dark:hover:shadow-none dark:border-none dark:shadow-black hover:shadow-none transition-shadow dark:text-darkBlack text-white font-bold rounded-2xl bg-[#29201d] dark:bg-white dark:border-2 mt-10"
-                >
-                  Visite o site
-                </a>
-                <a
-                  href="https://github.com/matheusdamiao/site_fotografo"
-                  target="_blank"
-                  className=" py-4 font-bold px-6 text-base shadow-md shadow-black dark:shadow-black dark:shadow-md dark:hover:shadow-none hover:shadow-none transition-shadow dark:text-white rounded-2xl dark:bg-transparent dark:border-solid dark:border-2 mt-10 dark:border-white border-solid border-2 border-black"
-                >
-                  Código{" "}
-                </a>
-              </div>
-              <div>
-                <p className="pl-8 lg:pl-0 text-xs text-darkGray lg:w-4/5 dark:text-white lg:text-base pb-2">
-                  {translate("projects.project5.text")}
-                </p>
-                <h4 className="pl-8 lg:pl-0 text-sm text-lightGray pt-4 lg:text-sm hover:text-lightOrange duration-500">
-                  {translate("projects.project5.techs")}
-                </h4>
-              </div>
-            </div>
-          </div>
-        </motion.div>
-
-        <motion.div
-          initial={{ x: -100, opacity: 0 }}
-          whileInView={{ x: 0, opacity: 1 }}
-          transition={{ type: "spring", delay: 0.5 }}
-          className="flex flex-wrap flex-col mt-28 mb-30 md:mb-0 xl:mt-40"
-        >
-          <h2 className="text-2xl font-semibold text-darkBlack dark:text-white lg:text-4xl pt-16 text-left pl-8 md:pl-24">
+        <div className="flex flex-wrap flex-col mt-28 mb-30 md:mb-0 xl:mt-40">
+          <h2 className="text-2xl px-9 text-center font-semibold text-darkBlack dark:text-white lg:text-2xl pt-16 ">
             {" "}
             {translate("projects.project2.title")}{" "}
           </h2>
-          <h3 className="text-sm pt-2 text-lightGray dark:text-lightGray lg:text-lg text-left pl-8 md:pl-24">
+          <h3 className="text-sm pt-2 text-center text-lightGray dark:text-lightGray lg:text-base ">
             {" "}
             {translate("projects.project2.subtitle")}
           </h3>
 
           <div className="flex flex-wrap lg:flex-nowrap items-center justify-center">
-            <div className="pt-12 shrink-1 flex lg:flex-none">
-              <Image className="w-full" src={dashboard} alt="" />
+            <div className="pt-12 shrink-1  lg:flex-none">
+              <div className="w-[700px] hidden md:block">
+                <div>
+                  <div className="relative mx-auto border-gray-900 dark:border-gray-900 bg-gray-900 border-[8px] rounded-t-xl h-[172px] max-w-[301px] md:h-[294px] md:max-w-[512px]">
+                    <div className="rounded-lg overflow-hidden h-[156px] md:h-[278px] bg-white dark:bg-gray-800">
+                      <video
+                        src="videos/advgs-video-desktop.mp4"
+                        muted
+                        controls
+                        loop
+                        autoPlay
+                        className="h-[156px] md:h-[278px] w-full rounded-xl"
+                      ></video>
+                    </div>
+                  </div>
+                  <div className="relative mx-auto bg-gray-900 dark:bg-gray-900 rounded-b-xl rounded-t-sm h-[17px] max-w-[351px] md:h-[21px] md:max-w-[597px]">
+                    <div className="absolute left-1/2 top-0 -translate-x-1/2 rounded-b-xl w-[56px] h-[5px] md:w-[96px] md:h-[8px] bg-gray-800"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="md:hidden block">
+                <div className="flex-0 relative mx-auto border-gray-800 dark:border-gray-900 bg-gray-800 border-[14px] rounded-[2.5rem] h-[600px] w-[300px] shadow-xl">
+                  <div className="w-[148px] h-[18px] bg-slate-600 top-0 rounded-b-[1rem] left-1/2 -translate-x-1/2 absolute"></div>
+                  <div className="h-[46px] w-[3px] bg-gray-800 absolute -start-[17px] top-[124px] rounded-s-lg"></div>
+                  <div className="h-[46px] w-[3px] bg-gray-800 absolute -start-[17px] top-[178px] rounded-s-lg"></div>
+                  <div className="h-[64px] w-[3px] bg-gray-800 absolute -end-[17px] top-[142px] rounded-e-lg"></div>
+                  <div className="rounded-[2rem] overflow-hidden w-[272px] h-[572px] bg-gray-800 dark:bg-gray-900">
+                    <video
+                      src="/videos/advgs-video-mobile.mp4"
+                      muted
+                      loop
+                      autoPlay
+                      className="block w-[272px] h-[572px] opacity-8"
+                    ></video>
+                  </div>
+                </div>
+              </div>
             </div>
 
-            <div className="w-full flex flex-col-reverse">
-              <div className="flex xl:w-full lg:justify-start lg:gap-2 xl:gap-10 flex-nowrap xl:flex-wrap justify-center gap-5">
+            <div className="w-full flex flex-col-reverse max-w-lg px-8">
+              <div className="flex gap-4 pt-4 justify-evenly lg:justify-start">
                 <a
-                  href=""
+                  className="flex gap-2 items-center text-gray-400"
+                  href="https://cupulillemedeirosadv.com/"
                   target="_blank"
-                  className="py-4 px-6 text-base dark:shadow-md shadow-md shadow-black dark:hover:shadow-none dark:border-none dark:shadow-black hover:shadow-none transition-shadow dark:text-darkBlack text-white font-bold rounded-2xl bg-[#29201d] dark:bg-white dark:border-2 mt-10"
                 >
-                  Visite o site
+                  <img
+                    src={link.src}
+                    className="w-[30px] h-[30px] cursor-pointer"
+                    alt=""
+                  />
+                  Link
                 </a>
+
                 <a
-                  href="https://github.com/matheusdamiao/x-commerce-challenge"
+                  className="flex gap-2 items-center text-gray-400"
+                  href="https://github.com/matheusdamiao/gatsby-blog"
                   target="_blank"
-                  className=" py-4 font-bold px-6 text-base shadow-md shadow-black dark:shadow-black dark:shadow-md dark:hover:shadow-none hover:shadow-none transition-shadow dark:text-white rounded-2xl dark:bg-transparent dark:border-solid dark:border-2 mt-10 dark:border-white border-solid border-2 border-black"
                 >
-                  Código{" "}
+                  <img
+                    src={code.src}
+                    className="w-[30px] h-[30px] cursor-pointer"
+                    alt=""
+                  />
+                  Código
                 </a>
               </div>
-              <div>
-                <p className="pl-8 lg:pl-0 text-xs text-darkGray lg:w-4/5 dark:text-white lg:text-base pb-2">
+              <div className="pt-10 max-w-3xl m-auto">
+                <p className=" text-sm text-darkGray lg:w-full dark:text-white lg:text-base pb-2">
                   {translate("projects.project2.text")}
                 </p>
-                <h4 className="pl-8 lg:pl-0 text-sm text-lightGray pt-4 lg:text-sm hover:text-lightOrange duration-500">
+                <h4 className=" text-sm text-lightGray pt-4 lg:text-sm text-center lg:text-left hover:text-lightOrange duration-500">
                   {translate("projects.project2.techs")}
                 </h4>
               </div>
             </div>
           </div>
-        </motion.div>
+        </div>
+
+        {/* PROJETO 3 */}
+        {/* /////////////////////// */}
+
+        <div className="flex flex-wrap flex-col mt-28 mb-30 md:mb-0 xl:mt-40">
+          <h2 className="text-2xl text-center font-semibold text-darkBlack dark:text-white lg:text-2xl pt-16 ">
+            {" "}
+            {translate("projects.project3.title")}{" "}
+          </h2>
+          <h3 className="text-sm pt-2 text-center text-lightGray dark:text-lightGray lg:text-base ">
+            {" "}
+            {translate("projects.project3.subtitle")}
+          </h3>
+
+          <div className="flex flex-wrap lg:flex-nowrap items-center justify-center">
+            <div className="pt-12 shrink-1  lg:flex-none">
+              <div className="w-[700px] hidden md:block">
+                <div>
+                  <div className="relative mx-auto border-gray-900 dark:border-gray-900 bg-gray-900 border-[8px] rounded-t-xl h-[172px] max-w-[301px] md:h-[294px] md:max-w-[512px]">
+                    <div className="rounded-lg overflow-hidden h-[156px] md:h-[278px] bg-white dark:bg-gray-800">
+                      <video
+                        src="videos/acquatis-video-browser.mp4"
+                        muted
+                        controls
+                        loop
+                        autoPlay
+                        className="h-[156px] md:h-[278px] w-full rounded-xl"
+                      ></video>
+                    </div>
+                  </div>
+                  <div className="relative mx-auto bg-gray-900 dark:bg-gray-900 rounded-b-xl rounded-t-sm h-[17px] max-w-[351px] md:h-[21px] md:max-w-[597px]">
+                    <div className="absolute left-1/2 top-0 -translate-x-1/2 rounded-b-xl w-[56px] h-[5px] md:w-[96px] md:h-[8px] bg-gray-800"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="md:hidden block">
+                <div className="flex-0 relative mx-auto border-gray-800 dark:border-gray-900 bg-gray-800 border-[14px] rounded-[2.5rem] h-[600px] w-[300px] shadow-xl">
+                  <div className="w-[148px] h-[18px] bg-slate-600 top-0 rounded-b-[1rem] left-1/2 -translate-x-1/2 absolute"></div>
+                  <div className="h-[46px] w-[3px] bg-gray-800 absolute -start-[17px] top-[124px] rounded-s-lg"></div>
+                  <div className="h-[46px] w-[3px] bg-gray-800 absolute -start-[17px] top-[178px] rounded-s-lg"></div>
+                  <div className="h-[64px] w-[3px] bg-gray-800 absolute -end-[17px] top-[142px] rounded-e-lg"></div>
+                  <div className="rounded-[2rem] overflow-hidden w-[272px] h-[572px] bg-gray-800 dark:bg-gray-900">
+                    <video
+                      src="/videos/acquatis-video-mobile.mp4"
+                      muted
+                      loop
+                      autoPlay
+                      className="block w-[272px] h-[572px] opacity-8"
+                    ></video>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="w-full flex flex-col-reverse max-w-lg px-8">
+              <div className="flex gap-4 pt-4 justify-center lg:justify-start">
+                <a
+                  className="flex gap-2 items-center text-gray-400"
+                  href="https://acquatis.com/"
+                  target="_blank"
+                >
+                  <img
+                    src={link.src}
+                    className="w-[30px] h-[30px] cursor-pointer"
+                    alt=""
+                  />
+                  Link
+                </a>
+
+                <a
+                  className="flex gap-2 items-center text-gray-400"
+                  href="https://github.com/Brunoporto2702/acquatis-front"
+                  target="_blank"
+                >
+                  <img
+                    src={code.src}
+                    className="w-[30px] h-[30px] cursor-pointer"
+                    alt=""
+                  />
+                  Código
+                </a>
+              </div>
+              <div className="pt-10 max-w-3xl m-auto">
+                <p className=" text-sm text-darkGray lg:w-full dark:text-white lg:text-base pb-2">
+                  {translate("projects.project3.text")}
+                </p>
+                <h4 className=" text-sm text-lightGray pt-4 lg:text-sm text-center lg:text-left hover:text-lightOrange duration-500">
+                  {translate("projects.project3.techs")}
+                </h4>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* PROJETO 4 */}
+        {/* /////////////////////// */}
+
+        <div className="flex flex-wrap flex-col mt-28 mb-30 md:mb-0 xl:mt-40">
+          <h2 className="text-2xl text-center font-semibold text-darkBlack dark:text-white lg:text-2xl pt-16 ">
+            {" "}
+            {translate("projects.project4.title")}{" "}
+          </h2>
+          <h3 className="text-sm pt-2 text-center text-lightGray dark:text-lightGray lg:text-base">
+            {" "}
+            {translate("projects.project4.subtitle")}
+          </h3>
+
+          <div className="flex flex-wrap lg:flex-nowrap items-center justify-center">
+            <div className="pt-12 shrink-1  lg:flex-none">
+              <div className="w-[700px] hidden md:block">
+                <div>
+                  <div className="relative mx-auto border-gray-900 dark:border-gray-900 bg-gray-900 border-[8px] rounded-t-xl h-[172px] max-w-[301px] md:h-[294px] md:max-w-[512px]">
+                    <div className="rounded-lg overflow-hidden h-[156px] md:h-[278px] bg-white dark:bg-gray-800">
+                      <video
+                        src="videos/psi-site-desktop.mp4"
+                        muted
+                        controls
+                        loop
+                        autoPlay
+                        className="h-[156px] md:h-[278px] w-full rounded-xl"
+                      ></video>
+                    </div>
+                  </div>
+                  <div className="relative mx-auto bg-gray-900 dark:bg-gray-900 rounded-b-xl rounded-t-sm h-[17px] max-w-[351px] md:h-[21px] md:max-w-[597px]">
+                    <div className="absolute left-1/2 top-0 -translate-x-1/2 rounded-b-xl w-[56px] h-[5px] md:w-[96px] md:h-[8px] bg-gray-800"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="md:hidden block">
+                <div className="flex-0 relative mx-auto border-gray-800 dark:border-gray-900 bg-gray-800 border-[14px] rounded-[2.5rem] h-[600px] w-[300px] shadow-xl">
+                  <div className="w-[148px] h-[18px] bg-slate-600 top-0 rounded-b-[1rem] left-1/2 -translate-x-1/2 absolute"></div>
+                  <div className="h-[46px] w-[3px] bg-gray-800 absolute -start-[17px] top-[124px] rounded-s-lg"></div>
+                  <div className="h-[46px] w-[3px] bg-gray-800 absolute -start-[17px] top-[178px] rounded-s-lg"></div>
+                  <div className="h-[64px] w-[3px] bg-gray-800 absolute -end-[17px] top-[142px] rounded-e-lg"></div>
+                  <div className="rounded-[2rem] overflow-hidden w-[272px] h-[572px] bg-gray-800 dark:bg-gray-900">
+                    <video
+                      src="/videos/psi-site-mobile.mp4"
+                      muted
+                      loop
+                      autoPlay
+                      className="block w-[272px] h-[572px] opacity-8"
+                    ></video>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="w-full flex flex-col-reverse max-w-lg px-8">
+              <div className="flex gap-4 pt-4 justify-center lg:justify-start">
+                <a
+                  className="flex gap-2 items-center text-gray-400"
+                  href="https://raquelsilveira.vercel.app/home"
+                  target="_blank"
+                >
+                  <img
+                    src={link.src}
+                    className="w-[30px] h-[30px] cursor-pointer"
+                    alt=""
+                  />
+                  Link
+                </a>
+
+                <a
+                  className="flex gap-2 items-center text-gray-400"
+                  href="https://github.com/matheusdamiao/jest-next-testing"
+                  target="_blank"
+                >
+                  <img
+                    src={code.src}
+                    className="w-[30px] h-[30px] cursor-pointer"
+                    alt=""
+                  />
+                  Código
+                </a>
+              </div>
+              <div className="pt-10 max-w-3xl m-auto">
+                <p className=" text-sm text-darkGray lg:w-full dark:text-white lg:text-base pb-2">
+                  {translate("projects.project4.text")}
+                </p>
+                <h4 className=" text-sm text-lightGray pt-4 lg:text-sm text-center lg:text-left hover:text-lightOrange duration-500">
+                  {translate("projects.project4.techs")}
+                </h4>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* PROJETO 5 */}
+        {/* /////////////////////// */}
+        <div className="flex flex-wrap flex-col mt-28 mb-30 md:mb-0 xl:mt-40">
+          <h2 className="text-2xl text-center font-semibold text-darkBlack dark:text-white lg:text-2xl pt-16 ">
+            {" "}
+            {translate("projects.project5.title")}{" "}
+          </h2>
+          <h3 className="text-sm pt-2 text-center text-lightGray dark:text-lightGray lg:text-base ">
+            {" "}
+            {translate("projects.project5.subtitle")}
+          </h3>
+
+          <div className="flex flex-wrap lg:flex-nowrap items-center justify-center">
+            <div className="pt-12 shrink-1  lg:flex-none">
+              <div className="w-[700px] hidden md:block">
+                <div>
+                  <div className="relative mx-auto border-gray-900 dark:border-gray-900 bg-gray-900 border-[8px] rounded-t-xl h-[172px] max-w-[301px] md:h-[294px] md:max-w-[512px]">
+                    <div className="rounded-lg overflow-hidden h-[156px] md:h-[278px] bg-white dark:bg-gray-800">
+                      <video
+                        src="videos/adv-site-desktop.mp4"
+                        muted
+                        controls
+                        loop
+                        autoPlay
+                        className="h-[156px] md:h-[278px] w-full rounded-xl"
+                      ></video>
+                    </div>
+                  </div>
+                  <div className="relative mx-auto bg-gray-900 dark:bg-gray-900 rounded-b-xl rounded-t-sm h-[17px] max-w-[351px] md:h-[21px] md:max-w-[597px]">
+                    <div className="absolute left-1/2 top-0 -translate-x-1/2 rounded-b-xl w-[56px] h-[5px] md:w-[96px] md:h-[8px] bg-gray-800"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="md:hidden block">
+                <div className="flex-0 relative mx-auto border-gray-800 dark:border-gray-900 bg-gray-800 border-[14px] rounded-[2.5rem] h-[600px] w-[300px] shadow-xl">
+                  <div className="w-[148px] h-[18px] bg-slate-600 top-0 rounded-b-[1rem] left-1/2 -translate-x-1/2 absolute"></div>
+                  <div className="h-[46px] w-[3px] bg-gray-800 absolute -start-[17px] top-[124px] rounded-s-lg"></div>
+                  <div className="h-[46px] w-[3px] bg-gray-800 absolute -start-[17px] top-[178px] rounded-s-lg"></div>
+                  <div className="h-[64px] w-[3px] bg-gray-800 absolute -end-[17px] top-[142px] rounded-e-lg"></div>
+                  <div className="rounded-[2rem] overflow-hidden w-[272px] h-[572px] bg-gray-800 dark:bg-gray-900">
+                    <video
+                      src="/videos/adv-site-mobile.mp4"
+                      muted
+                      loop
+                      autoPlay
+                      className="block w-[272px] h-[572px] opacity-8"
+                    ></video>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="w-full flex flex-col-reverse max-w-lg px-8">
+              <div className="flex gap-4 pt-4 justify-center lg:justify-start">
+                <a
+                  className="flex gap-2 items-center text-gray-400"
+                  href="https://site-advogado-template.netlify.app/"
+                  target="_blank"
+                >
+                  <img
+                    src={link.src}
+                    className="w-[30px] h-[30px] cursor-pointer"
+                    alt=""
+                  />
+                  Link
+                </a>
+
+                <a
+                  className="flex gap-2 items-center text-gray-400"
+                  href="https://github.com/matheusdamiao/template-lawyer-site"
+                  target="_blank"
+                >
+                  <img
+                    src={code.src}
+                    className="w-[30px] h-[30px] cursor-pointer"
+                    alt=""
+                  />
+                  Código
+                </a>
+              </div>
+              <div className="pt-10 max-w-3xl m-auto">
+                <p className=" text-sm text-darkGray lg:w-full dark:text-white lg:text-base pb-2">
+                  {translate("projects.project5.text")}
+                </p>
+                <h4 className=" text-sm text-lightGray pt-4 lg:text-sm text-center lg:text-left hover:text-lightOrange duration-500">
+                  {translate("projects.project5.techs")}
+                </h4>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );

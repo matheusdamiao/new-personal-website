@@ -1,8 +1,8 @@
 {"header": {
-    "title": "Olá, meu nome é Matheus Damião. ",
-    "subtitle": " Sou desenvolvedor web.",
-    "body": "Construo websites rápidos e seguros com design & tecnologias modernas", 
-    "button": "vamos trabalhar juntos"
+    "title": "o seu lugar na web",
+    "subtitle": " Construo sites e plataformas sob medida para empreendedores digitais que querem chegar mais longe",
+    "name": "Matheus Damião", 
+    "bio": "Desenvolvedor Full-Stack & UI Designer"
 },
 "about": {
     "title": "Prazer, Matheus!",
@@ -18,54 +18,54 @@
     }
 },
 "services": {
-    "title": "O que eu faço",
+    "title": "Soluções personalizadas",
     "topic1": {
-        "title": "Desenvolvimento de sites institucionais e landing pages",
+        "title": "Sites institucionais e Landing pages",
         "text": "Websites rápidos e seguros feitos com as mais novas tecnologias de desenvolvimento web, como GatsbyJS e NextJS."
     },
     "topic2": {
-        "title": "Blog, Agenda, News",
-        "text": "Carregue textos, imagens e publique conteúdo no seu próprio site conectando-se a um Headless CMS, como Decap CMS ou Wordpress"
+        "title": "Blog, Agenda, Notícias",
+        "text": "Carregue textos, imagens e publique conteúdo no seu próprio site"
     },
     "topic3": {
         "title": "Responsividade 100%",
         "text": "Do IPad ao celular, seu site 100% responsivo em todos os dispositivos e com design guiado pela melhor experiência do usuário (UX)"
     },
     "topic4": {
-        "title": "Serviços da Web",
-        "text": "Conecte sua aplicação a outras APIs e tenha acesso a mais recursos, pagamentos, banco de dados, e muito mais"
+        "title": "Web sem fronteiras",
+        "text": "Receba pagamentos, automatize e-mails, conecte-se a banco de dados, e muito mais"
     }
 },"projects":{
-    "title": "Projetos",
+    "title": "Últimos projetos lançados",
     "project1": {
-        "title":"Cupulille e Medeiros Advogadas",
-        "subtitle":"Site institucional + blog [em construção]",
-        "text":"Depois de um rebranding, construi o site institucional com a nova logotipo que, junto da paleta de cor monocromática, traz seriedade e leveza ao design. Possui também blog próprio e formulário de contato automatizado.",
-        "techs":"Techs: GatsbyJS, NetlifyCMS, Sass, Netlify"
+        "title":"Club Transatlântico",
+        "subtitle":"Site Institucional",
+        "text":"Desenvolvido para atender à nova identidade visual do Club, trazendo modernidade, sofisticação e ênfase nos valores",
+        "techs":"Techs: GatsbyJS, Tailwind, Netlify, Figma"
     },
     "project2": {
-        "title":"Dashboard de Comércio",
-        "subtitle":"Desafio",
-        "text":"Navegue entre os produtos, cadastre novos itens no banco de dados (MirageJS), e favorite e pesquise itens salvos. Este dashboard foi desenvolvido para atender uma plataforma de comércio online organizando os produtos para seus clientes.",
-        "techs":"Techs: NextJS, Styled-Components, SWR, React-hot-toast, MirageJS"
+        "title":"Cupulille e Medeiros Advogadas",
+        "subtitle":"Site institucional + blog + ID Visual",
+        "text":"Construção de uma nova ID visual e site institucional + blog para escritório de advogadas familiaristas",
+        "techs":"Techs: GatsbyJS, NetlifyCMS, Sass, Netlify, Figma"
     },
     "project3": {
-        "title":"Pedro Menezes Advocacia",
-        "subtitle":"Site institucional + blog (conceito)",
-        "text":"Pedro Menezes é um site institucional completo, com blog e formulário de contato automatizado, que desenvolvi com o objetivo de atender às demandas reais de um site para escritório de advocacia.",
-        "techs":"Techs: Gatsby, NetlifyCMS, Styled-Components"
+        "title":"Acquatis - Marketing Digital",
+        "subtitle":"Site institucional + Sistema Web",
+        "text":"Design, código e copywriting do site institucional da Acquatis, startup paulista de marketing.",
+        "techs":"Techs: NextJs, Tailwind, Figma, Vercel, Heroku, NestJs, Resend, PostgreSQL"
     },
     "project4": {
-        "title":"Patrícia | Designer Gráfico",
-        "subtitle":"Portfólio (conceito)",
-        "text":"O objetivo do projeto foi criar um portfólio clean para que um designer gráfico pudesse expor seus melhores trabalhos na web. ",
-        "techs":"Techs: React, Styled-Components"
+        "title":"Raquel Silveira | Psicóloga",
+        "subtitle":"Site institucional + Agendamento automatizado",
+        "text":"Site institucional com agendamento automatizado com Google Meet e Agenda",
+        "techs":"Techs: HTML, CSS, JavaScript, Figma"
     },
     "project5": {
-        "title":"Pedro Menezes | Fotografia",
-        "subtitle":"Portfólio (conceito)",
-        "text":"O objetivo do projeto foi desenvolver um website completo para um fotógrafo. Após uma pesquisa de benchmarking, decidi por categorizar os ensaios, inserir relatos dos clientes e adicionar botões fixos de contato. ",
-        "techs":"Techs: HTML, CSS, JavaScript, Figma"
+        "title":"Pedro Menezes Advocacia",
+        "subtitle":"Site institucional + blog (conceito)",
+        "text":"Site institucional completo, com blog e formulário de contato automatizado",
+        "techs":"Techs: Gatsby, NetlifyCMS, Styled-Components"
     }
 },
 "contact": {

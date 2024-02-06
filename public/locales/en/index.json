@@ -1,8 +1,8 @@
 {"header": {
-    "title": "Hi, my name is Matheus Damião. ",
-    "subtitle": " I'm a web developer.",
-    "body": "I build fast and secure websites with modern technology & design",
-    "button": "let's work together"
+    "title": "Your place on the web",
+    "subtitle": "I build custom websites and platforms for digital entrepreneurs who want to go further.",
+    "name": "Matheus Damião",
+    "bio": "Full-Stack Developer & UI Designer"
 },
 "about": {
     "title": "Hi! Nice to meet you!",
@@ -12,13 +12,14 @@
     "title": "Some technologies I've worked with",
     "topic1": "React, GatsbyJS, NextJS",
     "topic2": "Figma and Adobe Photoshop",
-    "topic3": "Back-end: Node(Express), .NET Core 6",
-    "topic4": "Headless CMS: NetlifyCMS, Hygraph, WordPress, Strapi",
-    "topic5": "Database: MongoDB, Firebase, SQLite"
+    "topic3": "Back-end: Node, Express, NestJs, .NET Core 6",
+    "topic4": "Headless CMS: DecapCMS, Hygraph, WordPress, Strapi",
+    "topic5": "Database: MongoDB, PostgreSQL, Firebase, SQLite"
     }
 },
 "services": {
-    "title": "What I do",
+    "title": "Customized solutions",
+    "subtitle": "",
     "topic1": {
         "title": "Institutional websites and landing pages development",
         "text": "Secure and fast websites made with the newest web development technologies, like GatsbyJS and NextJS"
@@ -37,36 +38,36 @@
     }
 },
 "projects":{
-    "title": "Projects",
+    "title": "Latest projects launched",
     "project1": {
-        "title":"Cupulille e Medeiros Lawyers",
-        "subtitle":"Institutional website + blog [work in progress]",
-        "text":"After a rebranding, I built this institutional website with a new logo, which, alongside the new monochromatic pallete color, brings seriousness and lightness to design. It also has a blog and an automatic contact form to reach clients.",
-        "techs":"Techs: GatsbyJS, NetlifyCMS, Sass, Netlify"
+        "title":"Club Transatlântico",
+        "subtitle":"Institutional Site",
+        "text":"Developed to meet the new visual identity of the Club, bringing modernity, sophistication, and emphasis on values",
+        "techs":"Techs: GatsbyJS, Tailwind, Netlify, Figma"
     },
     "project2": {
-        "title":"Commercial Dashboard",
-        "subtitle":"Challenge",
-        "text":"Browse through products, register new items in the database (MirageJS), and bookmark and serach saved items. This dashboard was developed to attend to an online commercial platform organizing its products to clients",
-        "techs":"Techs: NextJS, Styled-Components, SWR, React-hot-toast, MirageJS"
+        "title":"Cupulille e Medeiros Advogadas",
+        "subtitle":"Site institucional + blog + ID Visual",
+        "text":"Construction of a new visual identity and institutional website + blog.",
+        "techs":"Techs: GatsbyJS, NetlifyCMS, Sass, Netlify, Figma"
     },
     "project3": {
-        "title":"Pedro Menezes | Law Office",
-        "subtitle":"Institutional website + blog (concept)",
-        "text":"Pedro Menezes is a complete institutional website, with blog and an automatized form contact, which I developed in order to meet real demands from a law office",
-        "techs":"Techs: Gatsby, NetlifyCMS, Styled-Components"
+        "title":"Acquatis - Marketing Digital",
+        "subtitle":"Site institucional + Sistema Web",
+        "text":"Design, code, and copywriting of the institutional website for Acquatis, a marketing startup from São Paulo.",
+        "techs":"Techs: NextJs, Tailwind, Figma, Vercel, Heroku, NestJs, Resend, PostgreSQL"
     },
     "project4": {
-        "title":"Patrícia | Graphic Designer",
-        "subtitle":"Portifolio (concept)",
-        "text":"The aim of this project was to create a clean portfolio, so a graphic designer could show her best works on the web",
-        "techs":"Techs: React, Styled-Components"
+        "title":"Raquel Silveira | Psicóloga",
+        "subtitle":"Site institucional + Agendamento automatizado",
+        "text":"Institutional website with automated scheduling via Google Meet and Calendar.",
+        "techs":"Techs: Nextjs, Styled-components, Jest, Figma"
     },
     "project5": {
-        "title":"Pedro Menezes | Photography",
-        "subtitle":"Portfolio (concept)",
-        "text":"The aim of this project was to develop a complete website for a photographer. After a benchmarking research, I decided to categorize photo essays, add clients' testimonials and add fixed contact buttons.",
-        "techs":"Techs: HTML, CSS, JavaScript, Figma"
+        "title":"Pedro Menezes Advocacia",
+        "subtitle":"Site institucional + blog (conceito)",
+        "text":"Complete institutional website, with blog and automated contact form.",
+        "techs":"Techs: Gatsby, NetlifyCMS, Styled-Components"
     }
 },"contact": {
     "title": "Let's work on a project?",
