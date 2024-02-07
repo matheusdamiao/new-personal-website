@@ -37,16 +37,7 @@ const Projects = () => {
         <h2 className="flex font-Source text-center text-3xl gap-4 md:text-5xl tracking-[6.5%] transform hover:text-darkOrange hover:translate-x-2 transition duration-300">
           {translate("projects.title")}
         </h2>
-        <motion.img
-          src={rocket.src}
-          alt=""
-          className="w-[80px]"
-          whileHover={{
-            scale: 1.2,
-
-            transition: { type: "spring", duration: 0.5 },
-          }}
-        />
+        <img src={rocket.src} alt="" className="w-[80px]" />
       </motion.div>
 
       {/* PROJETO 1 */}
