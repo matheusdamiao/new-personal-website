@@ -43,7 +43,7 @@ const Menu = ({ locales }: Language) => {
 
   return (
     <>
-      <div className="flex items-center z-20 justify-between w-full px-10 py-3 fixed bg-white dark:bg-lightBlack bg-opacity-50 backdrop-blur-sm dark:bg-opacity-50">
+      <div className="flex items-center z-20 justify-between w-full px-9 pr-16 py-3 fixed bg-white dark:bg-lightBlack bg-opacity-50 backdrop-blur-sm dark:bg-opacity-50">
         <Image alt="" src={theme === "dark" ? logo : logoWhite} width={50} />
         <div className="">
           <ul className="hidden lg:flex justify-evenly items-center gap-12 dark:text-lightGray text-lightGray">
