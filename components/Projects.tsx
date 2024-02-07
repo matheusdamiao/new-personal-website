@@ -37,7 +37,7 @@ const Projects = () => {
         <h2 className="flex font-Source text-center text-3xl gap-4 md:text-5xl tracking-[6.5%] transform hover:text-darkOrange hover:translate-x-2 transition duration-300">
           {translate("projects.title")}
         </h2>
-        <img src={rocket.src} alt="" className="w-[80px]" />
+        <Image src={rocket} alt="" className="w-[80px]" />
       </motion.div>
 
       {/* PROJETO 1 */}
@@ -48,7 +48,7 @@ const Projects = () => {
             {" "}
             {translate("projects.project1.title")}{" "}
           </h2>
-          <h3 className="text-sm pt-2 text-center text-lightGray dark:text-lightGray lg:text-base ">
+          <h3 className="text-sm pt-2 text-center text-gray-700 dark:text-lightGray lg:text-base ">
             {" "}
             {translate("projects.project1.subtitle")}
           </h3>
@@ -97,12 +97,12 @@ const Projects = () => {
             <div className="w-full flex flex-col-reverse max-w-lg px-8">
               <div className="flex gap-4 pt-4 justify-center lg:justify-start">
                 <a
-                  className="flex gap-2 items-center text-gray-400"
+                  className="flex gap-2 items-center dark:text-gray-400 text-gray-700"
                   href="https://clubtransatlantico.com.br/"
                   target="_blank"
                 >
-                  <img
-                    src={link.src}
+                  <Image
+                    src={link}
                     className="w-[30px] h-[30px] cursor-pointer"
                     alt=""
                   />
@@ -110,12 +110,12 @@ const Projects = () => {
                 </a>
 
                 <a
-                  className="flex gap-2 items-center text-gray-400"
+                  className="flex gap-2 items-center dark:text-gray-400 text-gray-700 "
                   href="https://github.com/matheusdamiao/club-transatlantico"
                   target="_blank"
                 >
-                  <img
-                    src={code.src}
+                  <Image
+                    src={code}
                     className="w-[30px] h-[30px] cursor-pointer"
                     alt=""
                   />
@@ -142,7 +142,7 @@ const Projects = () => {
             {" "}
             {translate("projects.project2.title")}{" "}
           </h2>
-          <h3 className="text-sm pt-2 text-center text-lightGray dark:text-lightGray lg:text-base ">
+          <h3 className="text-sm pt-2 text-center text-gray-700 dark:text-lightGray lg:text-base ">
             {" "}
             {translate("projects.project2.subtitle")}
           </h3>
@@ -191,12 +191,12 @@ const Projects = () => {
             <div className="w-full flex flex-col-reverse max-w-lg px-8">
               <div className="flex gap-4 pt-4 justify-evenly lg:justify-start">
                 <a
-                  className="flex gap-2 items-center text-gray-400"
+                  className="flex gap-2 items-center dark:text-gray-400 text-gray-700"
                   href="https://cupulillemedeirosadv.com/"
                   target="_blank"
                 >
-                  <img
-                    src={link.src}
+                  <Image
+                    src={link}
                     className="w-[30px] h-[30px] cursor-pointer"
                     alt=""
                   />
@@ -204,12 +204,12 @@ const Projects = () => {
                 </a>
 
                 <a
-                  className="flex gap-2 items-center text-gray-400"
+                  className="flex gap-2 items-center dark:text-gray-400 text-gray-700"
                   href="https://github.com/matheusdamiao/gatsby-blog"
                   target="_blank"
                 >
-                  <img
-                    src={code.src}
+                  <Image
+                    src={code}
                     className="w-[30px] h-[30px] cursor-pointer"
                     alt=""
                   />
@@ -236,7 +236,7 @@ const Projects = () => {
             {" "}
             {translate("projects.project3.title")}{" "}
           </h2>
-          <h3 className="text-sm pt-2 text-center text-lightGray dark:text-lightGray lg:text-base ">
+          <h3 className="text-sm pt-2 text-center text-gray-700 dark:text-lightGray lg:text-base ">
             {" "}
             {translate("projects.project3.subtitle")}
           </h3>
@@ -285,12 +285,12 @@ const Projects = () => {
             <div className="w-full flex flex-col-reverse max-w-lg px-8">
               <div className="flex gap-4 pt-4 justify-center lg:justify-start">
                 <a
-                  className="flex gap-2 items-center text-gray-400"
+                  className="flex gap-2 items-center dark:text-gray-400 text-gray-700"
                   href="https://acquatis.com/"
                   target="_blank"
                 >
-                  <img
-                    src={link.src}
+                  <Image
+                    src={link}
                     className="w-[30px] h-[30px] cursor-pointer"
                     alt=""
                   />
@@ -298,12 +298,12 @@ const Projects = () => {
                 </a>
 
                 <a
-                  className="flex gap-2 items-center text-gray-400"
+                  className="flex gap-2 items-center dark:text-gray-400 text-gray-700"
                   href="https://github.com/Brunoporto2702/acquatis-front"
                   target="_blank"
                 >
-                  <img
-                    src={code.src}
+                  <Image
+                    src={code}
                     className="w-[30px] h-[30px] cursor-pointer"
                     alt=""
                   />
@@ -330,7 +330,7 @@ const Projects = () => {
             {" "}
             {translate("projects.project4.title")}{" "}
           </h2>
-          <h3 className="text-sm pt-2 text-center text-lightGray dark:text-lightGray lg:text-base">
+          <h3 className="text-sm pt-2 text-center text-gray-700 dark:text-lightGray lg:text-base">
             {" "}
             {translate("projects.project4.subtitle")}
           </h3>
@@ -379,12 +379,12 @@ const Projects = () => {
             <div className="w-full flex flex-col-reverse max-w-lg px-8">
               <div className="flex gap-4 pt-4 justify-center lg:justify-start">
                 <a
-                  className="flex gap-2 items-center text-gray-400"
+                  className="flex gap-2 items-center dark:text-gray-400 text-gray-700"
                   href="https://raquelsilveira.vercel.app/home"
                   target="_blank"
                 >
-                  <img
-                    src={link.src}
+                  <Image
+                    src={link}
                     className="w-[30px] h-[30px] cursor-pointer"
                     alt=""
                   />
@@ -392,12 +392,12 @@ const Projects = () => {
                 </a>
 
                 <a
-                  className="flex gap-2 items-center text-gray-400"
+                  className="flex gap-2 items-center dark:text-gray-400 text-gray-700"
                   href="https://github.com/matheusdamiao/jest-next-testing"
                   target="_blank"
                 >
-                  <img
-                    src={code.src}
+                  <Image
+                    src={code}
                     className="w-[30px] h-[30px] cursor-pointer"
                     alt=""
                   />
@@ -423,7 +423,7 @@ const Projects = () => {
             {" "}
             {translate("projects.project5.title")}{" "}
           </h2>
-          <h3 className="text-sm pt-2 text-center text-lightGray dark:text-lightGray lg:text-base ">
+          <h3 className="text-sm pt-2 text-center text-gray-700 dark:text-lightGray lg:text-base ">
             {" "}
             {translate("projects.project5.subtitle")}
           </h3>
@@ -472,12 +472,12 @@ const Projects = () => {
             <div className="w-full flex flex-col-reverse max-w-lg px-8">
               <div className="flex gap-4 pt-4 justify-center lg:justify-start">
                 <a
-                  className="flex gap-2 items-center text-gray-400"
+                  className="flex gap-2 items-center dark:text-gray-400 text-gray-700"
                   href="https://site-advogado-template.netlify.app/"
                   target="_blank"
                 >
-                  <img
-                    src={link.src}
+                  <Image
+                    src={link}
                     className="w-[30px] h-[30px] cursor-pointer"
                     alt=""
                   />
@@ -485,12 +485,12 @@ const Projects = () => {
                 </a>
 
                 <a
-                  className="flex gap-2 items-center text-gray-400"
+                  className="flex gap-2 items-center dark:text-gray-400 text-gray-700"
                   href="https://github.com/matheusdamiao/template-lawyer-site"
                   target="_blank"
                 >
-                  <img
-                    src={code.src}
+                  <Image
+                    src={code}
                     className="w-[30px] h-[30px] cursor-pointer"
                     alt=""
                   />
