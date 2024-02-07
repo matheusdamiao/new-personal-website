@@ -62,7 +62,6 @@ const Projects = () => {
                       <video
                         src="https://res.cloudinary.com/dg5yog3gf/video/upload/v1707312490/personal%20site/club-video-desktop_wtunwf.mp4"
                         muted
-                        controls
                         loop
                         autoPlay
                         className="h-[156px] md:h-[278px] w-full rounded-xl"
@@ -156,7 +155,6 @@ const Projects = () => {
                       <video
                         src="https://res.cloudinary.com/dg5yog3gf/video/upload/v1707312485/personal%20site/advgs-video-desktop_wmnjyh.mp4"
                         muted
-                        controls
                         loop
                         autoPlay
                         className="h-[156px] md:h-[278px] w-full rounded-xl"
@@ -250,7 +248,6 @@ const Projects = () => {
                       <video
                         src="https://res.cloudinary.com/dg5yog3gf/video/upload/v1707312484/personal%20site/acquatis-video-browser_jber03.mp4"
                         muted
-                        controls
                         loop
                         autoPlay
                         className="h-[156px] md:h-[278px] w-full rounded-xl"
@@ -344,7 +341,6 @@ const Projects = () => {
                       <video
                         src="https://res.cloudinary.com/dg5yog3gf/video/upload/v1707312481/personal%20site/psi-site-desktop_qabxvi.mp4"
                         muted
-                        controls
                         loop
                         autoPlay
                         className="h-[156px] md:h-[278px] w-full rounded-xl"
@@ -437,7 +433,6 @@ const Projects = () => {
                       <video
                         src="https://res.cloudinary.com/dg5yog3gf/video/upload/v1707312487/personal%20site/adv-site-desktop_cmk2zl.mp4"
                         muted
-                        controls
                         loop
                         autoPlay
                         className="h-[156px] md:h-[278px] w-full rounded-xl"
