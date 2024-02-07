@@ -27,7 +27,7 @@ const Services = () => {
         <h2 className="font-Source text-3xl md:text-5xl dark:text-white; transform hover:text-darkOrange hover:translate-x-2 transition duration-300">
           {translate("services.title")}
         </h2>
-        <h3>{translate("services.subtitle")}</h3>
+        {/* <h3>{translate("services.subtitle")}</h3> */}
       </motion.div>
 
       <div className="flex flex-wrap w-4/5 justify-between items-center mt-16 md:mt-20 gap-20 md:gap-15">

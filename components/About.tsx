@@ -1,9 +1,8 @@
 import Image from "next/image";
 import React, { useState } from "react";
-import avatar from "./../assets/images/foto-nova-matheus.png";
+import avatar from "./../assets/images/foto-nova-matheus.webp";
 import { useTranslation } from "react-i18next";
 import { motion } from "framer-motion";
-import { useRouter } from "next/router";
 
 const About = () => {
   const [readMore, setReadMore] = useState(false);

@@ -1,5 +1,5 @@
 import React from "react";
-import avatar from "./../assets/images/avatar-matheus.png";
+import avatar from "./../assets/images/avatar-matheus.webp";
 import { motion } from "framer-motion";
 const Profile = ({ bio }: { bio: string }) => {
   return (

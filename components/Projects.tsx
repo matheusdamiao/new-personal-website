@@ -69,7 +69,7 @@ const Projects = () => {
                   <div className="relative mx-auto border-gray-900 dark:border-gray-900 bg-gray-900 border-[8px] rounded-t-xl h-[172px] max-w-[301px] md:h-[294px] md:max-w-[512px]">
                     <div className="rounded-lg overflow-hidden h-[156px] md:h-[278px] bg-white dark:bg-gray-800">
                       <video
-                        src="videos/club-video-desktop.mp4"
+                        src="https://res.cloudinary.com/dg5yog3gf/video/upload/v1707312490/personal%20site/club-video-desktop_wtunwf.mp4"
                         muted
                         controls
                         loop
@@ -92,7 +92,7 @@ const Projects = () => {
                   <div className="h-[64px] w-[3px] bg-gray-800 absolute -end-[17px] top-[142px] rounded-e-lg"></div>
                   <div className="rounded-[2rem] overflow-hidden w-[272px] h-[572px] bg-gray-800 dark:bg-gray-900">
                     <video
-                      src="/videos/club-video-mobile.mp4"
+                      src="https://res.cloudinary.com/dg5yog3gf/video/upload/v1707312493/personal%20site/club-video-mobile_ddlq0c.mp4"
                       muted
                       loop
                       autoPlay
@@ -163,7 +163,7 @@ const Projects = () => {
                   <div className="relative mx-auto border-gray-900 dark:border-gray-900 bg-gray-900 border-[8px] rounded-t-xl h-[172px] max-w-[301px] md:h-[294px] md:max-w-[512px]">
                     <div className="rounded-lg overflow-hidden h-[156px] md:h-[278px] bg-white dark:bg-gray-800">
                       <video
-                        src="videos/advgs-video-desktop.mp4"
+                        src="https://res.cloudinary.com/dg5yog3gf/video/upload/v1707312485/personal%20site/advgs-video-desktop_wmnjyh.mp4"
                         muted
                         controls
                         loop
@@ -186,7 +186,7 @@ const Projects = () => {
                   <div className="h-[64px] w-[3px] bg-gray-800 absolute -end-[17px] top-[142px] rounded-e-lg"></div>
                   <div className="rounded-[2rem] overflow-hidden w-[272px] h-[572px] bg-gray-800 dark:bg-gray-900">
                     <video
-                      src="/videos/advgs-video-mobile.mp4"
+                      src="https://res.cloudinary.com/dg5yog3gf/video/upload/v1707312488/personal%20site/advgs-video-mobile_gyi1hp.mp4"
                       muted
                       loop
                       autoPlay
@@ -257,7 +257,7 @@ const Projects = () => {
                   <div className="relative mx-auto border-gray-900 dark:border-gray-900 bg-gray-900 border-[8px] rounded-t-xl h-[172px] max-w-[301px] md:h-[294px] md:max-w-[512px]">
                     <div className="rounded-lg overflow-hidden h-[156px] md:h-[278px] bg-white dark:bg-gray-800">
                       <video
-                        src="videos/acquatis-video-browser.mp4"
+                        src="https://res.cloudinary.com/dg5yog3gf/video/upload/v1707312484/personal%20site/acquatis-video-browser_jber03.mp4"
                         muted
                         controls
                         loop
@@ -280,7 +280,7 @@ const Projects = () => {
                   <div className="h-[64px] w-[3px] bg-gray-800 absolute -end-[17px] top-[142px] rounded-e-lg"></div>
                   <div className="rounded-[2rem] overflow-hidden w-[272px] h-[572px] bg-gray-800 dark:bg-gray-900">
                     <video
-                      src="/videos/acquatis-video-mobile.mp4"
+                      src="https://res.cloudinary.com/dg5yog3gf/video/upload/v1707312488/personal%20site/acquatis-video-mobile_cvexni.mp4"
                       muted
                       loop
                       autoPlay
@@ -351,7 +351,7 @@ const Projects = () => {
                   <div className="relative mx-auto border-gray-900 dark:border-gray-900 bg-gray-900 border-[8px] rounded-t-xl h-[172px] max-w-[301px] md:h-[294px] md:max-w-[512px]">
                     <div className="rounded-lg overflow-hidden h-[156px] md:h-[278px] bg-white dark:bg-gray-800">
                       <video
-                        src="videos/psi-site-desktop.mp4"
+                        src="https://res.cloudinary.com/dg5yog3gf/video/upload/v1707312481/personal%20site/psi-site-desktop_qabxvi.mp4"
                         muted
                         controls
                         loop
@@ -374,7 +374,7 @@ const Projects = () => {
                   <div className="h-[64px] w-[3px] bg-gray-800 absolute -end-[17px] top-[142px] rounded-e-lg"></div>
                   <div className="rounded-[2rem] overflow-hidden w-[272px] h-[572px] bg-gray-800 dark:bg-gray-900">
                     <video
-                      src="/videos/psi-site-mobile.mp4"
+                      src="https://res.cloudinary.com/dg5yog3gf/video/upload/v1707312488/personal%20site/psi-site-mobile_b7d3p2.mp4"
                       muted
                       loop
                       autoPlay
@@ -444,7 +444,7 @@ const Projects = () => {
                   <div className="relative mx-auto border-gray-900 dark:border-gray-900 bg-gray-900 border-[8px] rounded-t-xl h-[172px] max-w-[301px] md:h-[294px] md:max-w-[512px]">
                     <div className="rounded-lg overflow-hidden h-[156px] md:h-[278px] bg-white dark:bg-gray-800">
                       <video
-                        src="videos/adv-site-desktop.mp4"
+                        src="https://res.cloudinary.com/dg5yog3gf/video/upload/v1707312487/personal%20site/adv-site-desktop_cmk2zl.mp4"
                         muted
                         controls
                         loop
@@ -467,7 +467,7 @@ const Projects = () => {
                   <div className="h-[64px] w-[3px] bg-gray-800 absolute -end-[17px] top-[142px] rounded-e-lg"></div>
                   <div className="rounded-[2rem] overflow-hidden w-[272px] h-[572px] bg-gray-800 dark:bg-gray-900">
                     <video
-                      src="/videos/adv-site-mobile.mp4"
+                      src="https://res.cloudinary.com/dg5yog3gf/video/upload/v1707312487/personal%20site/adv-site-mobile_mhtirl.mp4"
                       muted
                       loop
                       autoPlay

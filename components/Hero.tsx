@@ -3,8 +3,9 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import { useTranslation } from "react-i18next";
 import { Language } from "./Menu";
 import { useRouter } from "next/router";
-import bg from "./../assets/images/bg-hero.png";
+import bg from "./../assets/images/bg-hero.webp";
 import Profile from "./Profile";
+import Image from "next/image";
 
 const Hero = () => {
   const { t: translate } = useTranslation("index");
@@ -62,8 +63,10 @@ const Hero = () => {
         id="hero"
         className="relative pt-0 w-full h-[100svh] md:h-screen flex-col flex items-start px-9 lg:px-44 justify-center bg-white  dark:bg-lightBlack"
       >
-        <img
+        <Image
           src={bg.src}
+          fill
+          priority
           className="absolute object-left top-0 left-0 object-cover w-full h-screen"
           alt=""
         />
