@@ -53,6 +53,8 @@ function MyApp({ Component, pageProps }: AppProps) {
         gtag('config', '${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}', {
         page_path: window.location.pathname,
         });
+
+        gtag('config', 'AW-11141066541');
     `}
       </Script>
 
