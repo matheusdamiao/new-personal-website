@@ -283,7 +283,7 @@ const Projects = () => {
               <div className="flex gap-4 pt-4 justify-center lg:justify-start">
                 <a
                   className="flex gap-2 items-center dark:text-gray-400 text-gray-700"
-                  href="https://acquatis.com/"
+                  href="https://acquatis-front.vercel.app/"
                   target="_blank"
                 >
                   <Image
