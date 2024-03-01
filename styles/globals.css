@@ -21,7 +21,9 @@
       font-family: 'Share Tech Mono', 'monospace';
     }
 
-
+    .font-percent {
+      font-size: 2svh;
+    }
 
     #corrente-hero > span {
       --tw-text-opacity: 0.2  ;

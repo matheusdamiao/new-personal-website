@@ -71,11 +71,11 @@ const Hero = () => {
           alt=""
         />
         <motion.div
-          className="flex flex-col items-center z-10 w-full justify-between h-[50svh] lg:h-[40svh]"
+          className="flex flex-col items-center z-10 w-full justify-center h-[50svh] lg:h-[40svh]"
           ref={ref}
           style={{ y, opacity }}
         >
-          <div className="flex items-center justify-center flex-wrap gap-2">
+          <div className="flex items-center justify-center font-percent flex-wrap gap-2">
             <div className="">
               <motion.span
                 initial={{ y: -50, opacity: 0, scale: 0 }}
@@ -101,73 +101,79 @@ const Hero = () => {
             </motion.div>
           </div>
 
-          <Profile bio={translate("header.bio")} />
+          {/* <Profile bio={translate("header.bio")} /> */}
         </motion.div>
       </div>
 
-      <motion.svg
-        className="absolute bottom-[20vh] md:bottom-0 hidden md:block left-[48%]"
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 2 }}
-      >
-        <motion.path
-          d="M0 0 L30 32 L60 0"
-          className="fill-none stroke-darkGray stroke-[3px] "
-          initial={{ y: 0, opacity: 1 }}
-          animate={{ y: 50, opacity: [1, 0.5, 0] }}
-          transition={{
-            repeat: Infinity,
-            repeatType: "loop",
-            duration: 2,
-            delay: 1,
-          }}
-        />
-        <motion.path
-          d="M0 0 L30 32 L60 0"
-          className="fill-none stroke-darkOrange stroke-[3px]"
-          initial={{ y: 0, opacity: 1 }}
-          animate={{ y: 50, opacity: [1, 0.5, 0] }}
-          transition={{
-            repeat: Infinity,
-            repeatType: "loop",
-            duration: 2,
-            delay: 1.8,
-          }}
-        />
-      </motion.svg>
+      <div className="absolute bottom-0 left-0 right-0  hidden md:block m-auto text-center">
+        <motion.svg
+          // className="absolute bottom-[20vh] md:bottom-0 hidden md:block left-[48%]"
+          className=" w-[100px] hidden md:block m-auto "
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 2 }}
+        >
+          <motion.path
+            d="M0 0 L30 32 L60 0"
+            className="fill-none stroke-darkGray stroke-[3px] "
+            initial={{ y: 0, opacity: 1 }}
+            animate={{ y: 50, opacity: [1, 0.5, 0] }}
+            transition={{
+              repeat: Infinity,
+              repeatType: "loop",
+              duration: 2,
+              delay: 1,
+            }}
+          />
+          <motion.path
+            d="M0 0 L30 32 L60 0"
+            className="fill-none stroke-darkOrange stroke-[3px]"
+            initial={{ y: 0, opacity: 1 }}
+            animate={{ y: 50, opacity: [1, 0.5, 0] }}
+            transition={{
+              repeat: Infinity,
+              repeatType: "loop",
+              duration: 2,
+              delay: 1.8,
+            }}
+          />
+        </motion.svg>
+      </div>
 
-      <motion.svg
-        className="absolute bottom-[1vh] left-[40%] w-[100px] md:hidden block"
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 2 }}
-      >
-        <motion.path
-          d="M35 0 L50 15 L65 0"
-          className="fill-none stroke-darkGray stroke-[3px] "
-          initial={{ y: 0, opacity: 1 }}
-          animate={{ y: 50, opacity: [1, 0.5, 0] }}
-          transition={{
-            repeat: Infinity,
-            repeatType: "loop",
-            duration: 2,
-            delay: 1,
-          }}
-        />
-        <motion.path
-          d="M35 0 L50 15 L65 0"
-          className="fill-none stroke-darkOrange stroke-[3px]"
-          initial={{ y: 0, opacity: 1 }}
-          animate={{ y: 50, opacity: [1, 0.5, 0] }}
-          transition={{
-            repeat: Infinity,
-            repeatType: "loop",
-            duration: 2,
-            delay: 2,
-          }}
-        />
-      </motion.svg>
+      <div className="absolute bottom-0 left-0 right-0  md:hidden block m-auto text-center">
+        <motion.svg
+          className=" w-[100px] md:hidden block m-auto "
+          // className="absolute bottom-0 left-0 right-0 w-[80px] md:hidden block m-auto text-center"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 2 }}
+        >
+          <motion.path
+            d="M35 0 L50 15 L65 0"
+            className="fill-none stroke-darkGray stroke-[3px] "
+            initial={{ y: 0, opacity: 1 }}
+            animate={{ y: 50, opacity: [1, 0.5, 0] }}
+            transition={{
+              repeat: Infinity,
+              repeatType: "loop",
+              duration: 2,
+              delay: 1,
+            }}
+          />
+          <motion.path
+            d="M35 0 L50 15 L65 0"
+            className="fill-none stroke-darkOrange stroke-[3px]"
+            initial={{ y: 0, opacity: 1 }}
+            animate={{ y: 50, opacity: [1, 0.5, 0] }}
+            transition={{
+              repeat: Infinity,
+              repeatType: "loop",
+              duration: 2,
+              delay: 2,
+            }}
+          />
+        </motion.svg>
+      </div>
     </>
   );
 };
